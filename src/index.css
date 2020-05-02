@@ -52,14 +52,46 @@ body {
 }
 
 #short-info {
-  height: 30%;
+  height: auto;
   width: 40%;
   float: right;
   margin: 2rem;
   margin-top: 15rem;
-position: relative;
+  position: relative;
   background-color: black;
   opacity: 0.6;
   color: white;
   padding: 1rem;
 }
+
+#services-container {
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  height: 30vh;
+  text-align: center;
+}
+
+#services {
+  margin: 2rem;
+  border-style: outset;
+}
+
+#services h1 {
+  
+}
+
+#listcontainer {
+  margin: auto;
+  position: relative;
+  display: inline-flex;
+} 
+
+.list-items {
+  width: fit-content;
+  display: inline-block;
+  margin: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: start;
+}
+
