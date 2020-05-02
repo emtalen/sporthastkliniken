@@ -9,6 +9,9 @@ body {
   height: 10rem;
   width: 100%;
   background-color: #870a0a;
+  position: fixed;
+  z-index: 1;
+  text-align: center;
 }
 
 #footer {
@@ -18,9 +21,8 @@ body {
   align-content: flex-end;
   width: 100%;
   border-top: 3px solid black;
-  position: absolute;
   bottom: 0;
-  overflow: hidden;
+  background-color: white;
 }
 
 #info-container {
@@ -41,4 +43,23 @@ body {
 #phone {
   float: left;
   margin: 2rem;
+}
+
+#start-page {
+  height: 100vh;
+  background-color: lightblue;
+  z-index: 0;
+}
+
+#short-info {
+  height: 30%;
+  width: 40%;
+  float: right;
+  margin: 2rem;
+  margin-top: 15rem;
+position: relative;
+  background-color: black;
+  opacity: 0.6;
+  color: white;
+  padding: 1rem;
 }
