@@ -2,6 +2,7 @@ import React from "react";
 
 const Services = () => {
   return (
+    <>
     <div id="services-container">
       <div id="services">
         <h1>Tjänster</h1>
@@ -37,6 +38,10 @@ const Services = () => {
         </div>
       </div>
     </div>
+    <div id='image-goes-here'>
+bla bla
+    </div>
+    </>
   );
 };
 

@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import StartPage from "./components/StartPage";
 import Services from "./components/Services";
+import NewsHomePage from "./components/NewsHomePage";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <Header />
       <StartPage />
       <Services />
+      <NewsHomePage />
       <Footer />
     </>
   );

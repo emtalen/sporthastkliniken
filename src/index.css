@@ -76,15 +76,11 @@ body {
   border-style: outset;
 }
 
-#services h1 {
-  
-}
-
 #listcontainer {
   margin: auto;
   position: relative;
   display: inline-flex;
-} 
+}
 
 .list-items {
   width: fit-content;
@@ -93,5 +89,43 @@ body {
   margin-left: 5%;
   margin-right: 5%;
   text-align: start;
+}
+
+#image-goes-here {
+  height: 50vh;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  background-color: lightcoral;
+}
+
+#news-container {
+  height: 70vh;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  background-color: white;
+}
+
+#news {
+  margin: 2rem;
+  border-style: outset;
+  overflow: hidden;
+  height: 80%;
+}
+
+#news h1 {
+  text-align: center;
+}
+
+.news-content {
+  width: fit-content;
+  display: inline-block;
+height: auto;
+width: auto;
+ margin: 2rem;
+  padding:3rem;
+}
+
+.news-content img {
+  max-height: 50%;
 }
 
