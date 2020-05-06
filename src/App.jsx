@@ -1,17 +1,18 @@
 import React from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import StartPage from "./components/StartPage";
-import Services from "./components/Services";
-import NewsHomePage from "./components/NewsHomePage";
+import Home from "./components/Home";
+import { Route, Switch } from "react-router-dom";
+import TheTeam from "./components/TheTeam";
 
 const App = () => {
   return (
     <>
       <Header />
-      <StartPage />
-      <Services />
-      <NewsHomePage />
+      <Switch>
+        <Route exact path='/' component={Home}></Route>
+        <Route exact path='/teamet' component={TheTeam}></Route>
+      </Switch>
       <Footer />
     </>
   );
