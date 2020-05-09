@@ -1,13 +1,13 @@
 import React from 'react'
 import StartPage from './StartPage'
-import Services from './Services'
+import HomePageServices from './HomePageServices'
 import NewsHomePage from './NewsHomePage'
 
 const Home = () => {
   return (
     <div>
       <StartPage />
-      <Services />
+      <HomePageServices />
       <NewsHomePage />
     </div>
   );
