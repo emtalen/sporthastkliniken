@@ -8,33 +8,33 @@ const Header = () => {
         <h1>Sporthästkliniken Häljeby AB</h1>
       </div>
       <div className="header-tab">
-        <NavLink to="/kontakt" style={{ color: "black" }}>
+        <NavLink to="/kontakt" style={{ color: "white" }}>
           Kontakt
         </NavLink>
       </div>
       <div className="header-tab">
-        <NavLink to="/galleri" style={{ color: "black" }}>
+        <NavLink to="/galleri" style={{ color: "white" }}>
           Galleri
         </NavLink>
       </div>
       <div className="header-tab">
-        <NavLink to="/partners" style={{ color: "black" }}>
+        <NavLink to="/partners" style={{ color: "white" }}>
           Partners
         </NavLink>
       </div>
 
       <div className="header-tab">
-        <NavLink to="/tjänster" style={{ color: "black" }}>
+        <NavLink to="/tjänster" style={{ color: "white" }}>
           Tjänster
         </NavLink>
       </div>
       <div className="header-tab">
-        <NavLink to="/teamet" style={{ color: "black" }}>
+        <NavLink to="/teamet" style={{ color: "white" }}>
           Teamet
         </NavLink>
       </div>
       <div className="header-tab">
-        <NavLink to="/nyheter" style={{ color: "black" }}>
+        <NavLink to="/nyheter" style={{ color: "white" }}>
           Nyheter
         </NavLink>
       </div>
