@@ -15,6 +15,7 @@ body {
   opacity: 0.8;
   top: 0;
   overflow: hidden;
+  border-bottom: white 2px solid;
 }
 
 #logo {
@@ -216,6 +217,17 @@ ul {
 #contact-info p {
   color: white;
   font-family: "Helvetica Neue Light";
+}
+
+#contact-greeting {
+  margin-top: 4rem;
+  text-align: center;
+  color: white;
+  font-family: "Helvetica Neue Light";
+}
+
+#contact-greeting img{
+height: 40rem;
 }
 #team {
   background-color: #290202;
