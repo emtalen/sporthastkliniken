@@ -1,5 +1,5 @@
 body {
-  background-color: #290202;
+  background: #290202;
   margin: 0;
   padding: 0;
   min-height: 100%;
@@ -150,39 +150,29 @@ ul {
 }
 
 #services-container {
-  height: auto;
   background-color: #290202;
   overflow: hidden;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 3%;
 }
 
 #row-container{
-  margin-top: 10rem;
-}
-
-#first-row {
-  overflow: hidden;
-  height: auto;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-top: 15rem;
+  width: 100%;
 }
 
 #second-row {
-  overflow: hidden;
-  height: auto;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-top: 3%;
 }
 
 #third-row {
-  overflow: hidden;
-  height: auto;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-top: 3%;
 }
 .service {
   background-color: darkgrey;
-  float: left;
-  margin-left: 5%;
+  display: inline-block;
+  margin-left: 3%;
   height: 20rem;
   width: 20rem;
 }
@@ -193,6 +183,8 @@ ul {
 
 .service-info {
   width: 50%;
+  display: inline-block;
+  margin-top: 1.5%;
   text-align: center;
 }
 

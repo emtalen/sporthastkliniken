@@ -7,7 +7,7 @@ const ServThirdRow = () => {
   const [serviceEleven, setServiceEleven] = useState(false);
   const [serviceTwelve, setServiceTwelve] = useState(false);
   return (
-    <div id='row-container'>
+    <div>
       <div id="third-row">
         <div
           className="service"
