@@ -39,6 +39,7 @@ body {
   background-color: black;
   color: white;
   z-index: 3;
+  padding: 1rem;
 }
 
 #info-container {
@@ -63,8 +64,9 @@ body {
 
 #start-page {
   height: 100vh;
-  background-color: white;
-  z-index: 0;
+  background-image: url('/images/0-bw.jpg');
+  background-size: cover;
+ z-index: 0;
 }
 
 #short-info {
@@ -81,11 +83,10 @@ body {
 }
 
 #services-container {
-  height: 30vh;
   text-align: center;
   background-color: #290202;
   color: white;
-  padding: 2rem;
+  padding: 5rem;
 }
 
 #services {
@@ -109,10 +110,11 @@ ul {
 }
 
 #image-goes-here {
-  height: 50vh;
+  height: 75vh;
   border-top: 3px solid black;
   border-bottom: 3px solid black;
-  background-color: lightcoral;
+  background-image: url('/images/49-bw.jpg');
+  background-size: cover;
 }
 
 #news-container {
@@ -147,7 +149,7 @@ ul {
 
 #services-container {
   height: auto;
-  background-color: sandybrown;
+  background-color: #290202;
   overflow: hidden;
 }
 
