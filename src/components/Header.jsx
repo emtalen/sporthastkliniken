@@ -1,10 +1,7 @@
-import React from 'react'
-import {NavLink} from 'react-router-dom';
+import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
-
-    
-
   return (
     <div id="header">
       <div id="logo">
@@ -43,6 +40,6 @@ const Header = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Header
+export default Header;

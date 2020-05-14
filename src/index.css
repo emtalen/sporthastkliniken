@@ -16,7 +16,10 @@ body {
   top: 0;
   overflow: hidden;
   border-bottom: white 2px solid;
-  transition-delay: 0.3s;
+}
+
+#header div.scroll {
+  opacity: 1;
 }
 
 #logo {
