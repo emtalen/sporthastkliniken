@@ -1,17 +1,14 @@
 import React, {useState} from 'react'
 
 const ServSecondRow = () => {
-  const [serviceFour, setServiceFour] = useState(false)
+  
   const [serviceFive, setServiceFive] = useState(false);
   const [serviceSix, setServiceSix] = useState(false);
+  const [serviceSeven, setServiceSeven] = useState(false);
+  const [serviceEight, setServiceEight] = useState(false);
   return (
-    <>
+    <div id="row-container">
       <div id="second-row">
-        <div
-          className="service"
-          onMouseEnter={() => setServiceFour(true)}
-          onMouseLeave={() => setServiceFour(false)}
-        ></div>
         <div
           className="service"
           onMouseEnter={() => setServiceFive(true)}
@@ -22,23 +19,39 @@ const ServSecondRow = () => {
           onMouseEnter={() => setServiceSix(true)}
           onMouseLeave={() => setServiceSix(false)}
         ></div>
+        <div
+          className="service"
+          onMouseEnter={() => setServiceSeven(true)}
+          onMouseLeave={() => setServiceSeven(false)}
+        ></div>
+        <div
+          className="service"
+          onMouseEnter={() => setServiceEight(true)}
+          onMouseLeave={() => setServiceEight(false)}
+        ></div>
       </div>
-      {serviceFour && (
-        <div className="service-info">
-          Here is some content that hopefully shows if you hover the forth one
-        </div>
-      )}
+
       {serviceFive && (
         <div className="service-info">
-          Here is some content that hopefully shows if you hover the fifth one
+         <p>Here is some content that hopefully shows if you hover the fifth one</p> 
         </div>
       )}
       {serviceSix && (
         <div className="service-info">
-          Here is some content that hopefully shows if you hover the sixth one
+         <p>Here is some content that hopefully shows if you hover the sixth one</p> 
         </div>
       )}
-    </>
+      {serviceSeven && (
+        <div className="service-info">
+         <p>Here is some content that hopefully shows if you hover the forth one</p> 
+        </div>
+      )}
+      {serviceEight && (
+        <div className="service-info">
+          <p>Here is some content that hopefully shows if you hover the forth one</p> 
+        </div>
+      )}
+    </div>
   );
 }
 

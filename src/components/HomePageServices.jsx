@@ -3,8 +3,8 @@ import React from "react";
 const HomePageServices = () => {
   return (
     <>
-    <div id="services-container">
-      <div id="services">
+    <div id="service-container">
+      <div id="service">
         <h1>Tjänster</h1>
         <div id="listcontainer">
           <div className="list-items">

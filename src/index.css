@@ -64,9 +64,9 @@ body {
 
 #start-page {
   height: 100vh;
-  background-image: url('/images/0-bw.jpg');
+  background-image: url("/images/0-bw.jpg");
   background-size: cover;
- z-index: 0;
+  z-index: 0;
 }
 
 #short-info {
@@ -82,14 +82,14 @@ body {
   padding: 1rem;
 }
 
-#services-container {
+#service-container {
   text-align: center;
   background-color: #290202;
   color: white;
   padding: 5rem;
 }
 
-#services {
+#service {
   margin: 2rem;
 }
 
@@ -113,7 +113,7 @@ ul {
   height: 75vh;
   border-top: 3px solid black;
   border-bottom: 3px solid black;
-  background-image: url('/images/49-bw.jpg');
+  background-image: url("/images/49-bw.jpg");
   background-size: cover;
 }
 
@@ -153,33 +153,36 @@ ul {
   overflow: hidden;
 }
 
+#row-container{
+  margin-top: 10rem;
+}
+
 #first-row {
   overflow: hidden;
   height: auto;
-  margin-left: 22%;
-  margin-right: 22%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 #second-row {
   overflow: hidden;
   height: auto;
-  margin-left: 22%;
-  margin-right: 22%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 #third-row {
   overflow: hidden;
   height: auto;
-  margin-left: 22%;
-  margin-right: 22%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 .service {
-  background-color: purple;
+  background-color: darkgrey;
   float: left;
-  margin: 5rem;
-  margin-top: 10rem;
-  height: 10rem;
-  width: 10rem;
+  margin-left: 5%;
+  height: 20rem;
+  width: 20rem;
 }
 
 .service:hover {
@@ -187,7 +190,13 @@ ul {
 }
 
 .service-info {
-  align-self: center;
+  width: 50%;
+  text-align: center;
+}
+
+.service-info p {
+  color: white;
+  font-family: "Helvetica Neue Light";
 }
 
 #contact {
@@ -208,10 +217,67 @@ ul {
   color: white;
   font-family: "Helvetica Neue Light";
 }
- h1 {
-     font-family: "BODONI 72";
- }
+#team {
+  background-color: #290202;
+}
 
- p {
-   font-family: "Helvetica Neue Light";
- }
+#team-container {
+  margin: auto;
+  display: inline-block;
+  overflow: hidden;
+  margin-top: 10rem;
+}
+
+#laura {
+  float: left;
+  margin: 5%;
+  overflow: hidden;
+}
+
+#laura img {
+  height: 30rem;
+  width: auto;
+  float: left;
+}
+
+#laura p {
+  margin: 1rem;
+  color: white;
+  font-family: "Helvetica Neue Light";
+}
+
+#mika {
+  float: left;
+  margin: 5%;
+  overflow: hidden;
+}
+
+#mika img {
+  height: 30rem;
+  width: auto;
+  float: left;
+}
+
+#mika p {
+  margin: 1rem;
+  color: white;
+  font-family: "Helvetica Neue Light";
+}
+
+#emelie {
+  float: left;
+  margin: 5%;
+  overflow: hidden;
+}
+
+#emelie img {
+  height: 30rem;
+  width: auto;
+  float: left;
+}
+
+#emelie p {
+  margin: 1rem;
+  color: white;
+  font-family: "Helvetica Neue Light";
+}
