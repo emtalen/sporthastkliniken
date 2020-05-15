@@ -4,8 +4,8 @@ import { Icon } from "semantic-ui-react";
 const Footer = () => {
   return (
     <div id="footer">
+      <h1>Kontakt</h1>
       <div id="info-container">
-        <h1>Kontakt</h1>
         <div id="address">
           <Icon name="map marker alternate" />
           <p>

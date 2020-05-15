@@ -10,21 +10,23 @@ const TheTeam = () => {
             Startade Equiaid Veterinär AB i början av 2016 med fokus på
             sporthästortopedi och som konsulterande kirurg. 2020 bytte Equiaid
             namn till Hästsportkliniken Häljeby AB. Laura har i över tio år
-            jobbat på olika hästsjukhus i USA, Sverige och Finland. Hon flyttade
-            till Sverige 2009 och jobbade mellan 2009 - 2015 på Evidensia
-            Specialisthästsjukhuset Strömsholm, varav den senaste tiden som
-            överveterinär i kirurgi. Under hennes tid på Evidensia jobbade hon
-            även som konsult på många olika kliniker runt om i Sverige. Laura
-            genomförde sin specialistutbildning inom hästkirurgi vid The Ohio
-            State University mellan 2006-2009 och är den enda i Sverige med
-            titeln Diplomate of American College of Veterinary Surgeons
-            (DiplACVS). 
-            <br/>
-            I USA fick hon möjligheten att jobba och lära sig från
+            jobbat på olika hästsjukhus i USA, Sverige och Finland.
+            <br /> 
+            Hon flyttade till Sverige 2009 och jobbade mellan 2009 - 2015
+            på Evidensia Specialisthästsjukhuset Strömsholm, varav den senaste
+            tiden som överveterinär i kirurgi. Under hennes tid på Evidensia
+            jobbade hon även som konsult på många olika kliniker runt om i
+            Sverige. Laura genomförde sin specialistutbildning inom hästkirurgi
+            vid The Ohio State University mellan 2006-2009 och är den enda i
+            Sverige med titeln Diplomate of American College of Veterinary
+            Surgeons (DiplACVS).
+            <br />I USA fick hon möjligheten att jobba och lära sig från
             världsledande kirurger, anestesiologer, intermedicinare och
             intesivvårdsspecialister inom häst. Det gav henne en unik kompetens
             inom hästkirurgi samt enorm klinisk erfarenhet inom alla
-            hästmedicinens olika grenar. Idag samarbetar Laura med duktiga
+            hästmedicinens olika grenar.
+            <br/> 
+            Idag samarbetar Laura med duktiga
             hovslagare, fysioterapeuter, naprapater, och tränare. Utöver
             undersökningar och operationer håller hon många föreläsningar på
             olika konvent runt om i landet. Hon äger själv fyra hästar och

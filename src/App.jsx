@@ -6,6 +6,7 @@ import { Route, Switch } from "react-router-dom";
 import TheTeam from "./components/TheTeam";
 import Services from "./components/Services";
 import Contact from './components/Contact'
+import TheClinic from './components/TheClinic'
 
 const App = () => {
     
@@ -14,10 +15,11 @@ const App = () => {
     <>
       <Header />
       <Switch>
-        <Route exact path='/' component={Home}></Route>
-        <Route exact path='/teamet' component={TheTeam}></Route>
-        <Route exact path='/tjänster' component={Services}></Route>
-        <Route exact path='/kontakt' component={Contact}></Route>
+        <Route exact path="/" component={Home}></Route>
+        <Route exact path="/teamet" component={TheTeam}></Route>
+        <Route exact path="/tjänster" component={Services}></Route>
+        <Route exact path="/kontakt" component={Contact}></Route>
+        <Route exact path="/kliniken" component={TheClinic}></Route>
       </Switch>
       <Footer />
     </>
