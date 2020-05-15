@@ -249,58 +249,30 @@ height: 40rem;
   display: inline-block;
   overflow: hidden;
   margin-top: 10rem;
+  padding-bottom: 5%;
 }
 
-#laura {
+.team-member {
   float: left;
-  margin: 5%;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 5%;
   overflow: hidden;
+  
+
 }
 
-#laura img {
+.team-member img {
   height: 30rem;
   width: auto;
   float: left;
+  padding-right: 5%;
 }
 
-#laura p {
+.team-member p {
   margin: 1rem;
+  font-size: 1.2rem;
   color: white;
-  font-family: "Helvetica Neue Light";
+  font-family: "Helvetica";
 }
 
-#mika {
-  float: left;
-  margin: 5%;
-  overflow: hidden;
-}
-
-#mika img {
-  height: 30rem;
-  width: auto;
-  float: left;
-}
-
-#mika p {
-  margin: 1rem;
-  color: white;
-  font-family: "Helvetica Neue Light";
-}
-
-#emelie {
-  float: left;
-  margin: 5%;
-  overflow: hidden;
-}
-
-#emelie img {
-  height: 30rem;
-  width: auto;
-  float: left;
-}
-
-#emelie p {
-  margin: 1rem;
-  color: white;
-  font-family: "Helvetica Neue Light";
-}

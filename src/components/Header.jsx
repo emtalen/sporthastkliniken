@@ -1,26 +1,25 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import useDocumentScrollThrottled from "../modules/scrollHandler";
 
 const Header = () => {
-
-  const [shouldFillHeader, setShouldFillHeader] = useState(false)
-  const [shouldNotFillHeader, setShouldNotFillHeader] = useState(true)
+  const [shouldFillHeader, setShouldFillHeader] = useState(false);
+  const [shouldNotFillHeader, setShouldNotFillHeader] = useState(true);
 
   const MINIMUM_SCROLL = 50;
-  const TIMEOUT_DELAY = 20
+  const TIMEOUT_DELAY = 20;
 
-  useDocumentScrollThrottled(callbackData => {
+  useDocumentScrollThrottled((callbackData) => {
     const { currentScrollTop } = callbackData;
     const isScrolledDown = currentScrollTop !== 0;
-    const isMinimumScrolled = currentScrollTop > MINIMUM_SCROLL
+    const isMinimumScrolled = currentScrollTop > MINIMUM_SCROLL;
 
     setShouldNotFillHeader(currentScrollTop < 20);
 
     setTimeout(() => {
       setShouldFillHeader(isScrolledDown && isMinimumScrolled);
-    }, TIMEOUT_DELAY)
-  })
+    }, TIMEOUT_DELAY);
+  });
 
   const transparentStyle = shouldNotFillHeader ? "transparent" : "filled";
   const scrollStyle = shouldFillHeader ? "fill" : "transparent";
@@ -28,10 +27,11 @@ const Header = () => {
   const [kliniken, setKliniken] = useState(false);
 
   return (
-
     <header className={`header ${scrollStyle} ${transparentStyle}`}>
       <div id="logo">
-        <h1>Sporthästkliniken Häljeby AB</h1>
+        <NavLink to="/" style={{ color: "white" }}>
+          <h1>Sporthästkliniken Häljeby AB</h1>
+        </NavLink>
       </div>
       <div className="header-tab">
         <NavLink to="/kontakt" style={{ color: "white" }}>
@@ -56,18 +56,18 @@ const Header = () => {
             <div className="dropdown-tab" id="dropdown-tjänster">
               <NavLink to="/tjänster" style={{ color: "white" }}>
                 Tjänster
-            </NavLink>
+              </NavLink>
             </div>
             <div className="dropdown-tab" id="dropdown-teamet">
               <NavLink to="/teamet" style={{ color: "white" }}>
                 Teamet
-            </NavLink>
+              </NavLink>
             </div>
             <div className="dropdown-tab">
-        <NavLink to="/galleri" style={{ color: "white" }}>
-          Galleri
-        </NavLink>
-      </div>
+              <NavLink to="/galleri" style={{ color: "white" }}>
+                Galleri
+              </NavLink>
+            </div>
           </div>
         )}
       </div>
