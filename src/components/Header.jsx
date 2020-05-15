@@ -7,15 +7,15 @@ const Header = () => {
     const [shouldFillHeader, setShouldFillHeader] = useState(false)
     const [shouldNotFillHeader, setShouldNotFillHeader] = useState(true)
 
-    const MINIMUM_SCROLL = 2;
+    const MINIMUM_SCROLL = 50;
     const TIMEOUT_DELAY = 20
 
     useDocumentScrollThrottled(callbackData => {
-      const { previousScrollTop, currentScrollTop } = callbackData;
-      const isScrolledDown = previousScrollTop < currentScrollTop;
+      const { currentScrollTop } = callbackData;
+      const isScrolledDown = currentScrollTop !== 0;
       const isMinimumScrolled = currentScrollTop > MINIMUM_SCROLL
 
-      setShouldNotFillHeader(currentScrollTop > 2);
+      setShouldNotFillHeader(currentScrollTop < 20);
 
       setTimeout(() => {
         setShouldFillHeader(isScrolledDown && isMinimumScrolled);

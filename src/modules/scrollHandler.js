@@ -13,7 +13,7 @@ const useDocumentScrollThrottled = (callback) => {
       return currentScrollTop
     })
 
-    callback({ previousScrollTop, currentScrollTop});
+    callback({ currentScrollTop});
   }
 
   const handleDocumentScrollThrottled = throttle(handleDocumentScroll, 10)
