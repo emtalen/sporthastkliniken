@@ -1,9 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import useDocumentScrollThrottled from "../modules/scrollHandler";
 
 const Header = () => {
+
+    const [shouldFillHeader, setShouldFillHeader] = useState(false)
+    const [shouldNotFillHeader, setShouldNotFillHeader] = useState(true)
+
+    const MINIMUM_SCROLL = 2;
+    const TIMEOUT_DELAY = 20
+
+    useDocumentScrollThrottled(callbackData => {
+      const { previousScrollTop, currentScrollTop } = callbackData;
+      const isScrolledDown = previousScrollTop < currentScrollTop;
+      const isMinimumScrolled = currentScrollTop > MINIMUM_SCROLL
+
+      setShouldNotFillHeader(currentScrollTop > 2);
+
+      setTimeout(() => {
+        setShouldFillHeader(isScrolledDown && isMinimumScrolled);
+      }, TIMEOUT_DELAY)
+    })
+
+    const transparentStyle = shouldNotFillHeader ? "transparent" : "filled";
+    const scrollStyle = shouldFillHeader ? "fill" : "transparent";
+
   return (
-    <div id="header">
+
+    <header className={`header ${scrollStyle} ${transparentStyle}`}>
       <div id="logo">
         <h1>Sporthästkliniken Häljeby AB</h1>
       </div>
@@ -38,7 +62,7 @@ const Header = () => {
           Nyheter
         </NavLink>
       </div>
-    </div>
+    </header>
   );
 };
 
