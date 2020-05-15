@@ -39,11 +39,6 @@ const Header = () => {
         </NavLink>
       </div>
       <div className="header-tab">
-        <NavLink to="/galleri" style={{ color: "white" }}>
-          Galleri
-        </NavLink>
-      </div>
-      <div className="header-tab">
         <NavLink to="/partners" style={{ color: "white" }}>
           Partners
         </NavLink>
@@ -68,6 +63,11 @@ const Header = () => {
                 Teamet
             </NavLink>
             </div>
+            <div className="dropdown-tab">
+        <NavLink to="/galleri" style={{ color: "white" }}>
+          Galleri
+        </NavLink>
+      </div>
           </div>
         )}
       </div>
