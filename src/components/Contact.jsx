@@ -6,14 +6,23 @@ const Contact = () => {
       <div id="contact-info">
         <h1>KONTAKT</h1>
         <p>
-          HÄSTSPORTKLINIKEN HÄLJEBY AB <br />
-          Häljeby 4, 731 92 Köping
+          SPORTHÄSTKLINIKEN HÄLJEBY AB <br />
+          Häljeby 4, 731 92 Köping<br/>
+          info@sporthastkliniken.se
         </p>
-        <p>Måndag-Fredag 08.00-16.00</p>
+        <p>Öppettider: <br/>
+        <p style={{ fontStyle: 'italic' }}>Vänligen notera att våra öppettider varierar.</p>
+        <p>Mån, Ons, Tors, Fre: <br/> Från 08:30</p>
+        <p>Tis: <br/>
+        Jämn vecka STÄNGT (Laura opererar i Husaby, Skara)<br/>
+        Ojämn vecka från 12:00</p>
+        <p>Helg: STÄNGT</p>
         <p>
-          +46 70 378 4110 <br />
-          Telefontid Vardagar 07.00-09.00
+          BOKNING VIA TELEFON <br />
+          +46 70 378 4110
         </p>
+        <p style={{ fontStyle: 'italic' }}>Om vi är upptagna, skicka ett SMS så ringer vi upp. <br/>
+        OBS- Vi tar inte emot bokningar på email.</p></p>
         <p>Övriga tider, skicka meddelande så ringer vi upp.</p>
       </div>
       <div id='contact-greeting'>

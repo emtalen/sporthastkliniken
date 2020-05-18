@@ -21,7 +21,7 @@ const App = () => {
         <Route exact path="/kontakt" component={Contact}></Route>
         <Route exact path="/kliniken" component={TheClinic}></Route>
       </Switch>
-      <Footer />
+     <Footer />
     </>
   );
 };

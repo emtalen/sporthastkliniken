@@ -13,42 +13,66 @@ const ServThirdRow = () => {
           className="service"
           onMouseEnter={() => setServiceNine(true)}
           onMouseLeave={() => setServiceNine(false)}
-        ></div>
+        >
+          <div className="service-name">Shockwave - Stötvågsbehandling</div>
+        </div>
         <div
           className="service"
           onMouseEnter={() => setServiceTen(true)}
           onMouseLeave={() => setServiceTen(false)}
-        ></div>
+        >
+          <div className="service-name">Endoskopi</div>
+        </div>
         <div
           className="service"
           onMouseEnter={() => setServiceEleven(true)}
           onMouseLeave={() => setServiceEleven(false)}
-        ></div>
+        >
+          <div className="service-name">Tandvård</div>
+        </div>
         <div
           className="service"
           onMouseEnter={() => setServiceTwelve(true)}
           onMouseLeave={() => setServiceTwelve(false)}
-        ></div>
+        >
+          <div className="service-name">Hovslageri & Sjukbeslag</div>
+        </div>
       </div>
 
       {serviceNine && (
         <div className="service-info">
-         <p>Here is some content that hopefully shows if you hover the sixth one</p> 
+          <p>
+            Används för behandling av muskelömhet i ryggar och skador på senor,
+            senskidor, gaffelband med mera. Vi har en helt ny PiezoWave
+            stötvågsmaskin som möjliggör en fokuserad djupgående behandling på
+            det aktuella stället. Stötvåg har direkt smärtlindrande och
+            anti-inflammatorisk effekt vilket ger fantastiskt resultat på
+            muskelömhet.
+          </p>
         </div>
       )}
       {serviceTen && (
         <div className="service-info">
-         <p>Here is some content that hopefully shows if you hover the forth one</p> 
+          <p>
+            Med en 1.5m eller 3m lång fiberendoskop kan vi göra undersökningar
+            av till exempel luftvägar, magsäck och urinvägar.
+          </p>
         </div>
       )}
       {serviceEleven && (
         <div className="service-info">
-         <p>Here is some content that hopefully shows if you hover the fifth one</p> 
+          <p>
+            Vi utför det grundliga inom tandvård; kontroller, raspning av tänder
+            samt borttagning av lättare tandsten. Laura gör även kirurgiska
+            ingrepp för borttagning av tänder på Husaby Hästklinik i Skara.
+            Bokning för tandborttagning sker direkt till Husaby Hästklink,
+            0511-275 50 eller skara@husabyhastkliniken.se{" "}
+          </p>
         </div>
       )}
       {serviceTwelve && (
         <div className="service-info">
-         <p>Here is some content that hopefully shows if you hover the fifth one</p> 
+          <p>Laura samarbetar med Smederöds Hovslageri.</p>
         </div>
       )}
     </div>

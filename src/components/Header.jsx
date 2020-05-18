@@ -28,56 +28,53 @@ const Header = () => {
 
   return (
     <header className={`header ${scrollStyle} ${transparentStyle}`}>
-      <div id="logo">
-        <NavLink to="/" style={{ color: "white" }}>
-          <h1>Sporthästkliniken Häljeby AB</h1>
-        </NavLink>
-      </div>
-      <div className="header-tab">
-        <NavLink to="/kontakt" style={{ color: "white" }}>
+      <NavLink to="/" style={{ color: "white" }}>
+        <img src="/images/Sporthastkliniken_liggande_vit_RGB.png" alt="logo" />
+      </NavLink>
+      <div>
+        <NavLink to="/kontakt" className="header-tab">
           Kontakt
         </NavLink>
       </div>
-      <div className="header-tab">
-        <NavLink to="/partners" style={{ color: "white" }}>
+      <div>
+        <NavLink to="/partners" className="header-tab">
           Partners
         </NavLink>
       </div>
       <div
-        className="header-tab"
         onMouseEnter={() => setKliniken(true)}
         onMouseLeave={() => setKliniken(false)}
         style={{ color: "white" }}
-        id="kliniken"
+        className="header-tab"
       >
-        <NavLink to="/kliniken" style={{ color: "white" }}>
+        <NavLink to="/kliniken" className="header-tab">
           Kliniken
         </NavLink>
         {kliniken && (
-          <div id="kliniken-dropdown-container">
+          <>
             <div className="dropdown-tab" id="dropdown-tjänster">
-              <NavLink to="/tjänster" style={{ color: "white" }}>
-                Tjänster
+              <NavLink to="/tjänster" className="tab">
+                <p>Tjänster</p>
               </NavLink>
             </div>
             <div className="dropdown-tab" id="dropdown-teamet">
-              <NavLink to="/teamet" style={{ color: "white" }}>
-                Teamet
+              <NavLink to="/teamet" className="tab">
+                <p>Teamet</p>
               </NavLink>
             </div>
-            <div className="dropdown-tab">
+            {/* <div className="dropdown-tab">
               <NavLink to="/galleri" style={{ color: "white" }}>
-                Galleri
+               <p>Galleri</p> 
               </NavLink>
-            </div>
-          </div>
+            </div> */}
+          </>
         )}
       </div>
-      <div className="header-tab">
+      {/* <div className="header-tab">
         <NavLink to="/nyheter" style={{ color: "white" }}>
           NYHETER
         </NavLink>
-      </div>
+      </div> */}
     </header>
   );
 };
