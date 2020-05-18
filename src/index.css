@@ -271,16 +271,15 @@ ul {
   opacity: 0.7;
 }
 
-.service:hover + .service-info{
-  transition: ease-in 0.5s;
-}
-
 .service-info {
   width: 50%;
   display: inline-block;
   margin-top: 1.5%;
   text-align: center;
   /* transition: 1s ease-in; */
+  animation: opacityOn 0.5s normal forwards;
+    animation-delay: 0.2s;
+    opacity: 0;
 }
 
 .service-info p {
@@ -288,6 +287,25 @@ ul {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 100;
   font-size: 1.2rem;
+}
+
+
+@keyframes opacityOn {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.25;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    75% {
+        opacity: 0.75;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .service-name {
@@ -387,7 +405,7 @@ ul {
   height: 30rem;
   width: auto;
   float: left;
-  padding-right: 4%;
+  padding-right: 3%;
 }
 
 .team-member p {
