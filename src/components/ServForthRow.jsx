@@ -9,24 +9,33 @@ const ServForthRow = () => {
       <div id="forth-row">
         <div
           className="service"
+          style={{ backgroundImage: 'url("/images/12_kirurgi.jpg")' }}
           onMouseEnter={() => setServiceThirteen(true)}
           onMouseLeave={() => setServiceThirteen(false)}
         >
-          <div className="service-name">Kirurgi</div>
+          <div className="service-name" id="one-line">
+            <h1>Kirurgi</h1>
+          </div>
         </div>
         <div
           className="service"
+          style={{ backgroundImage: 'url("/images/13_rehab.jpg")' }}
           onMouseEnter={() => setServiceFourteen(true)}
           onMouseLeave={() => setServiceFourteen(false)}
         >
-          <div className="service-name">Rehab</div>
+          <div className="service-name" id="one-line">
+            <h1>Rehab</h1>
+          </div>
         </div>
         <div
           className="service"
+          style={{ backgroundImage: 'url("/images/14_förel.jpg")' }}
           onMouseEnter={() => setServiceFifthteen(true)}
           onMouseLeave={() => setServiceFifthteen(false)}
         >
-          <div className="service-name">Föreläsningar</div>
+          <div className="service-name" id="one-line">
+            <h1>Föreläsningar</h1>
+          </div>
         </div>
       </div>
 

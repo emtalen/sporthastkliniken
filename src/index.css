@@ -182,7 +182,7 @@ p {
   padding-right: 2rem;
 }
 
- ul {
+ul {
   list-style: none;
 }
 
@@ -212,11 +212,10 @@ p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 100;
   text-transform: uppercase;
-   
 }
 
 #news p {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1.2rem;
   font-weight: 100;
 }
@@ -256,7 +255,8 @@ p {
   margin-top: 3%;
 }
 .service {
-  background-color: lightcoral;
+  background-size: cover;
+  background-position: center;
   display: inline-block;
   justify-content: space-evenly;
   margin-right: 1.5%;
@@ -264,10 +264,15 @@ p {
   height: 20rem;
   width: 20rem;
   overflow: hidden;
+  transition: ease-in 0.5s;
 }
 
 .service:hover {
-  opacity: 0.8;
+  opacity: 0.7;
+}
+
+.service:hover + .service-info{
+  transition: ease-in 0.5s;
 }
 
 .service-info {
@@ -276,23 +281,39 @@ p {
   margin-top: 1.5%;
   text-align: center;
   /* transition: 1s ease-in; */
-
 }
 
 .service-info p {
   color: black;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 100;
+  font-size: 1.2rem;
 }
 
 .service-name {
-  opacity: 0.8;
+  background: rgba(255, 255, 255, 0.5);
   text-align: center;
   width: inherit;
   padding: 1%;
   margin-top: 33%;
   font-size: 2rem;
-  border: 2px solid green;
   height: 30%;
+}
+
+.service-name h1 {
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 100;
+
+  opacity: 1;
+}
+
+#two-lines {
+  padding: 1%;
+}
+
+#one-line {
+  padding: 7%;
 }
 
 #contact {
@@ -314,6 +335,8 @@ p {
 #contact-info p {
   color: black;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 100;
 }
 
 #contact-greeting {
@@ -337,7 +360,7 @@ p {
   margin: auto;
   display: inline-block;
   overflow: hidden;
-  margin-top: 10rem;
+  margin-top: 10%;
   padding-bottom: 5%;
 }
 
@@ -346,7 +369,7 @@ p {
   font-weight: 100;
   font-size: 3rem;
   color: black;
-  margin-top: 3%;
+  margin-top: 2%;
   text-align: center;
   text-transform: uppercase;
 }
@@ -355,7 +378,8 @@ p {
   float: left;
   padding-left: 15%;
   padding-right: 15%;
-  padding-top: 2%;
+  padding-bottom: 4%;
+  padding-top: 3%;
   overflow: hidden;
 }
 
@@ -363,14 +387,23 @@ p {
   height: 30rem;
   width: auto;
   float: left;
-  padding-right: 5%;
+  padding-right: 4%;
 }
 
 .team-member p {
-  margin: 1rem;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: black;
   font-family: "Helvetica";
   font-weight: 100;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.team-member h2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 100;
+  margin-top: 0;
+}
+
+.team-member-container {
+  overflow: hidden;
 }

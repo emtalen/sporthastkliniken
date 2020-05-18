@@ -11,32 +11,43 @@ const ServSecondRow = () => {
       <div id="second-row">
         <div
           className="service"
+          style={{ backgroundImage: 'url("/images/5_med_under.jpg")' }}
           onMouseEnter={() => setServiceFive(true)}
           onMouseLeave={() => setServiceFive(false)}
         >
-          <div className="service-name">Medicinska Undersökningar</div>
+          <div className="service-name" id="twolines">
+            <h1>Medicinska Undersökningar</h1>
+          </div>
         </div>
         <div
           className="service"
+          style={{ backgroundImage: 'url("/images/17-bw.jpg")' }}
           onMouseEnter={() => setServiceSix(true)}
           onMouseLeave={() => setServiceSix(false)}
         >
-          <div className="service-name"> Besiktningar</div>
+          <div className="service-name" id="one-line">
+            <h1>Besiktningar</h1>
+          </div>
         </div>
         <div
           className="service"
+          style={{ backgroundImage: 'url("/images/7_Röntgen1.jpg")' }}
           onMouseEnter={() => setServiceSeven(true)}
           onMouseLeave={() => setServiceSeven(false)}
         >
-          <div className="service-name">Röntgen</div>
+          <div className="service-name" id="one-line">
+            <h1>Röntgen</h1>
+          </div>
         </div>
         <div
           className="service"
+          style={{ backgroundImage: 'url("/images/8_ultraljud.jpg")' }}
           onMouseEnter={() => setServiceEight(true)}
           onMouseLeave={() => setServiceEight(false)}
         >
-          <div className="service-name">Ultraljud</div>
-          
+          <div className="service-name" id="one-line">
+            <h1>Ultraljud</h1>
+          </div>
         </div>
       </div>
 

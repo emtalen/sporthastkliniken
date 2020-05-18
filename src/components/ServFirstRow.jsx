@@ -1,40 +1,53 @@
 import React, { useState } from "react";
 
 const ServFirstRow = () => {
-    const [serviceOne, setServiceOne] = useState(false);
-    const [serviceTwo, setServiceTwo] = useState(false);
-    const [serviceThree, setServiceThree] = useState(false);
-    const [serviceFour, setServiceFour] = useState(false);
+  const [serviceOne, setServiceOne] = useState(false);
+  const [serviceTwo, setServiceTwo] = useState(false);
+  const [serviceThree, setServiceThree] = useState(false);
+  const [serviceFour, setServiceFour] = useState(false);
   return (
     <div id="row-container">
       <div id="first-row">
         <div
           className="service"
+          style={{ backgroundImage: 'url("/images/1_Sårskador.jpg")' }}
           onMouseEnter={() => setServiceOne(true)}
           onMouseLeave={() => setServiceOne(false)}
         >
-          <div className="service-name">Sårskador</div>{" "}
+          {/* <img src="/images/1_Sårskador.jpg" alt="sårskador" className='service-img' /> */}
+          <div className="service-name" id="one-line">
+            <h1>Sårskador</h1>
+          </div>
         </div>
         <div
           className="service"
+          style={{ backgroundImage: 'url("/images/2_hält.jpg")' }}
           onMouseEnter={() => setServiceTwo(true)}
           onMouseLeave={() => setServiceTwo(false)}
         >
-          <div className="service-name">Hältutredningar</div>{" "}
+          <div className="service-name" id="one-line">
+            <h1>Hältutredningar</h1>
+          </div>
         </div>
         <div
           className="service"
+          style={{ backgroundImage: 'url("/images/3_rygg.jpg")' }}
           onMouseEnter={() => setServiceThree(true)}
           onMouseLeave={() => setServiceThree(false)}
         >
-          <div className="service-name">Ryggutredningar</div>
+          <div className="service-name" id="one-line">
+            <h1>Ryggutredningar</h1>
+          </div>
         </div>
         <div
           className="service"
+          style={{ backgroundImage: 'url("/images/4_regen.jpg")' }}
           onMouseEnter={() => setServiceFour(true)}
           onMouseLeave={() => setServiceFour(false)}
         >
-          <div className="service-name">Regenerativ Terapi</div>
+          <div className="service-name" id="one-line">
+            <h1>Regenerativ Terapi</h1>
+          </div>
         </div>
       </div>
       {serviceOne && (
@@ -88,6 +101,6 @@ const ServFirstRow = () => {
       )}
     </div>
   );
-}
+};
 
-export default ServFirstRow
+export default ServFirstRow;

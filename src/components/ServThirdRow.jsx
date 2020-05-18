@@ -1,7 +1,6 @@
-import React, {useState} from 'react'
+import React, { useState } from "react";
 
 const ServThirdRow = () => {
-    
   const [serviceNine, setServiceNine] = useState(false);
   const [serviceTen, setServiceTen] = useState(false);
   const [serviceEleven, setServiceEleven] = useState(false);
@@ -11,31 +10,43 @@ const ServThirdRow = () => {
       <div id="third-row">
         <div
           className="service"
+          style={{ backgroundImage: 'url("/images/9_shock.jpg")' }}
           onMouseEnter={() => setServiceNine(true)}
           onMouseLeave={() => setServiceNine(false)}
         >
-          <div className="service-name">Shockwave - Stötvågsbehandling</div>
+          <div className="service-name" id="two-lines">
+            <h1>Shockwave - Stötvågsbehandling</h1>
+          </div>
         </div>
         <div
           className="service"
+          style={{ backgroundImage: 'url("/images/10_endoskopi.jpg")' }}
           onMouseEnter={() => setServiceTen(true)}
           onMouseLeave={() => setServiceTen(false)}
         >
-          <div className="service-name">Endoskopi</div>
+          <div className="service-name" id="one-line">
+            <h1>Endoskopi</h1>
+          </div>
         </div>
         <div
           className="service"
+          style={{ backgroundImage: 'url("/images/11_tand.jpg")' }}
           onMouseEnter={() => setServiceEleven(true)}
           onMouseLeave={() => setServiceEleven(false)}
         >
-          <div className="service-name">Tandvård</div>
+          <div className="service-name" id="one-line">
+            <h1>Tandvård</h1>
+          </div>
         </div>
         <div
           className="service"
+          style={{ backgroundImage: 'url("/images/2_hält.jpg")' }}
           onMouseEnter={() => setServiceTwelve(true)}
           onMouseLeave={() => setServiceTwelve(false)}
         >
-          <div className="service-name">Hovslageri & Sjukbeslag</div>
+          <div className="service-name" id="twolines">
+            <h1>Hovslageri & Sjukbeslag</h1>
+          </div>
         </div>
       </div>
 
@@ -66,7 +77,7 @@ const ServThirdRow = () => {
             samt borttagning av lättare tandsten. Laura gör även kirurgiska
             ingrepp för borttagning av tänder på Husaby Hästklinik i Skara.
             Bokning för tandborttagning sker direkt till Husaby Hästklink,
-            0511-275 50 eller skara@husabyhastkliniken.se{" "}
+            0511-275 50 eller skara@husabyhastkliniken.se
           </p>
         </div>
       )}
@@ -77,6 +88,6 @@ const ServThirdRow = () => {
       )}
     </div>
   );
-}
+};
 
-export default ServThirdRow
+export default ServThirdRow;
