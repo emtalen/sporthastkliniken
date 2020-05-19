@@ -1,8 +1,7 @@
-import React, {useState} from 'react'
+import React, { useState } from "react";
 
 const ServSecondRow = () => {
-    const [serviceFour, setServiceFour] = useState(false);
-
+  const [serviceFour, setServiceFour] = useState(false);
   const [serviceFive, setServiceFive] = useState(false);
   const [serviceSix, setServiceSix] = useState(false);
   return (
@@ -75,6 +74,6 @@ const ServSecondRow = () => {
       )}
     </div>
   );
-}
+};
 
-export default ServSecondRow
+export default ServSecondRow;

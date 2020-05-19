@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 
 const ServThirdRow = () => {
-    const [serviceSeven, setServiceSeven] = useState(false);
+  const [serviceSeven, setServiceSeven] = useState(false);
   const [serviceEight, setServiceEight] = useState(false);
-
   const [serviceNine, setServiceNine] = useState(false);
-  
+
   return (
     <div>
-      <div className='service-row'>
+      <div className="service-row">
         <div
           className="service"
           style={{ backgroundImage: 'url("/images/7_Röntgen1.jpg")' }}
@@ -39,7 +38,6 @@ const ServThirdRow = () => {
             <h1>Shockwave - Stötvågsbehandling</h1>
           </div>
         </div>
-        
       </div>
       {serviceSeven && (
         <div className="service-info">
@@ -72,7 +70,6 @@ const ServThirdRow = () => {
           </p>
         </div>
       )}
-      
     </div>
   );
 };
