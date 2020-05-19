@@ -502,6 +502,7 @@ font-size: 1.2rem;
 
 #construction-container img {
   padding-bottom: 3%;
+  padding-top: 4%;
 }
 
 #image-container {
@@ -510,9 +511,37 @@ font-size: 1.2rem;
 
 .row-image {
   display: inline-block;
-  height: auto;
-  width: 23%;
+  height: 20rem;
+  width: 20rem;
   padding: 1%;
+  overflow: hidden;
 }
 
+.row-image img {
+  height: inherit;
+  width: inherit;
+  
+}
+
+#logo-container {
+  display: inline-block;
+}
+
+#logo-image-1 {
+ height: auto;
+ width: 40%;
+ padding-top: 0;
+ padding: 3%;
+ padding-bottom: 5%;
+}
+#logo-image-2 {
+height: auto;
+ width: 15%;
+ padding: 3%;
+}
+#logo-image-3 {
+height: auto;
+ width: 40%;
+ padding: 3%;
+}
 
