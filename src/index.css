@@ -425,3 +425,52 @@ ul {
 .team-member-container {
   overflow: hidden;
 }
+
+#partners {
+  background: lightgray;
+  padding-top: 10%;
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-bottom: 6%;
+}
+
+#partner-header{
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 100;
+  font-size: 3rem;
+  color: black;
+  margin-top: 2%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.partner-row {
+  text-align: center;
+  overflow: hidden;
+  padding-top: 5%;
+}
+
+#first-partner {
+  padding-right: 5%;
+}
+
+#second-partner {
+  height: auto;
+  width: 50%;
+  padding-bottom: 5%;
+}
+
+#third-partner {
+  height: auto;
+  width: 20%;
+  padding-right: 5%;
+
+}
+
+#forth-partner {
+  height: auto;
+  width: 50%;
+  padding-bottom: 5%;
+  padding-left: 3%;
+}
+
