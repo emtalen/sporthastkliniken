@@ -119,6 +119,7 @@ p {
 #short-info h1 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 100;
+font-size: 1.7rem;
 }
 
 #short-info {
@@ -194,7 +195,7 @@ ul {
 }
 
 #news-container {
-  height: 40vh;
+  height: 48vh;
   background-color: lightgray;
   color: black;
   padding: 4%;
@@ -411,7 +412,6 @@ ul {
 .team-member p {
   font-size: 1.2rem;
   color: black;
-  font-family: "Helvetica";
   font-weight: 100;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
@@ -473,4 +473,46 @@ ul {
   padding-bottom: 5%;
   padding-left: 3%;
 }
+
+#construction-container {
+  background: lightgray;
+  padding-top: 10%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
+}
+
+#construction-container h1{
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 100;
+  font-size: 3rem;
+  color: black;
+  text-transform: uppercase;
+  padding-bottom: 3%;
+}
+
+#construction-container p {
+font-size: 1.2rem;
+  color: black;
+  font-weight: 100;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding-bottom: 1%;
+}
+
+#construction-container img {
+  padding-bottom: 3%;
+}
+
+#image-container {
+  display: inline-block;
+}
+
+.row-image {
+  display: inline-block;
+  height: auto;
+  width: 23%;
+  padding: 1%;
+}
+
 

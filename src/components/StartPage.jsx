@@ -10,7 +10,14 @@ const StartPage = () => {
         backgroundSize: "cover",
       }} */}
       <div id="short-info">
-        <h1>Här kommer ett jävligt smart citat från Laura</h1>
+        <h1>
+          Vi är en hästklinik med fokus på sporthästen med lång erfarenhet från
+          akutsjukvård, ortopedi och kirurgi.<br/> Vi samarbetar med duktiga
+          hovslagare, fysioterapeuter och rehabiliteringsanläggningar för att
+          hitta en helheltslösning för dig och din häst.<br/> Vi håller oss i
+          framkant när det gäller diagnostiska tekniker och behandling av olika
+          skador.
+        </h1>
       </div>
     </div>
   );

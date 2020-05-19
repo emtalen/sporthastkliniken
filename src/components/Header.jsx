@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import useDocumentScrollThrottled from "../modules/scrollHandler";
 
 const Header = () => {
@@ -60,6 +60,11 @@ const Header = () => {
             <div className="dropdown-tab" id="dropdown-teamet">
               <NavLink to="/teamet" className="tab">
                 <p>Teamet</p>
+              </NavLink>
+            </div>
+            <div className="dropdown-tab" id="dropdown-bygget">
+              <NavLink to="/bygget" className="tab">
+                <p>Bygget av Kliniken</p>
               </NavLink>
             </div>
             {/* <div className="dropdown-tab">
