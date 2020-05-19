@@ -3,6 +3,7 @@ import ServFirstRow from "./ServFirstRow";
 import ServSecondRow from "./ServSecondRow";
 import ServThirdRow from "./ServThirdRow";
 import ServForthRow from "./ServForthRow";
+import ServFifthRow from "./ServFifthRow";
 
 const Services = () => {
   return (
@@ -12,6 +13,7 @@ const Services = () => {
       <ServSecondRow />
       <ServThirdRow />
       <ServForthRow/>
+      <ServFifthRow />
     </div>
   );
 };

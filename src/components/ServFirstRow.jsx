@@ -4,10 +4,9 @@ const ServFirstRow = () => {
   const [serviceOne, setServiceOne] = useState(false);
   const [serviceTwo, setServiceTwo] = useState(false);
   const [serviceThree, setServiceThree] = useState(false);
-  const [serviceFour, setServiceFour] = useState(false);
   return (
     <div id="row-container">
-      <div id="first-row">
+      <div className='service-row'>
         <div
           className="service"
           style={{ backgroundImage: 'url("/images/1_Sårskador.jpg")' }}
@@ -39,16 +38,7 @@ const ServFirstRow = () => {
             <h1>Ryggutredningar</h1>
           </div>
         </div>
-        <div
-          className="service"
-          style={{ backgroundImage: 'url("/images/4_regen.jpg")' }}
-          onMouseEnter={() => setServiceFour(true)}
-          onMouseLeave={() => setServiceFour(false)}
-        >
-          <div className="service-name" id="one-line">
-            <h1>Regenerativ Terapi</h1>
-          </div>
-        </div>
+        
       </div>
       {serviceOne && (
         <div className="service-info">
@@ -88,17 +78,7 @@ const ServFirstRow = () => {
           </p>
         </div>
       )}
-      {serviceFour && (
-        <div className="service-info">
-          <p>
-            Vi vill ligga i framkant när det gäller behandling av skador hos
-            sporthästar och använder därför bland annat stamceller i behandling
-            av senskador för optimal läkning. Vi har tillgång till den senaste
-            tekniken när det gäller behandling av ledinflammation med så kallad
-            i-RAP.
-          </p>
-        </div>
-      )}
+      
     </div>
   );
 };

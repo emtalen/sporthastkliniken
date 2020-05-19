@@ -1,14 +1,23 @@
 import React, {useState} from 'react'
 
 const ServSecondRow = () => {
-  
+    const [serviceFour, setServiceFour] = useState(false);
+
   const [serviceFive, setServiceFive] = useState(false);
   const [serviceSix, setServiceSix] = useState(false);
-  const [serviceSeven, setServiceSeven] = useState(false);
-  const [serviceEight, setServiceEight] = useState(false);
   return (
     <div>
-      <div id="second-row">
+      <div className="service-row">
+        <div
+          className="service"
+          style={{ backgroundImage: 'url("/images/4_regen.jpg")' }}
+          onMouseEnter={() => setServiceFour(true)}
+          onMouseLeave={() => setServiceFour(false)}
+        >
+          <div className="service-name" id="one-line">
+            <h1>Regenerativ Terapi</h1>
+          </div>
+        </div>
         <div
           className="service"
           style={{ backgroundImage: 'url("/images/5_med_under.jpg")' }}
@@ -29,28 +38,18 @@ const ServSecondRow = () => {
             <h1>Besiktningar</h1>
           </div>
         </div>
-        <div
-          className="service"
-          style={{ backgroundImage: 'url("/images/7_Röntgen1.jpg")' }}
-          onMouseEnter={() => setServiceSeven(true)}
-          onMouseLeave={() => setServiceSeven(false)}
-        >
-          <div className="service-name" id="one-line">
-            <h1>Röntgen</h1>
-          </div>
-        </div>
-        <div
-          className="service"
-          style={{ backgroundImage: 'url("/images/8_ultraljud.jpg")' }}
-          onMouseEnter={() => setServiceEight(true)}
-          onMouseLeave={() => setServiceEight(false)}
-        >
-          <div className="service-name" id="one-line">
-            <h1>Ultraljud</h1>
-          </div>
-        </div>
       </div>
-
+      {serviceFour && (
+        <div className="service-info">
+          <p>
+            Vi vill ligga i framkant när det gäller behandling av skador hos
+            sporthästar och använder därför bland annat stamceller i behandling
+            av senskador för optimal läkning. Vi har tillgång till den senaste
+            tekniken när det gäller behandling av ledinflammation med så kallad
+            i-RAP.
+          </p>
+        </div>
+      )}
       {serviceFive && (
         <div className="service-info">
           <p>
@@ -71,25 +70,6 @@ const ServSecondRow = () => {
             ryggröntgen. Om ni önskar kan vi även undersöka luftvägarna med en
             endoskopisk kamera samt göra en munhåleundersökning i samband med
             besiktningen.
-          </p>
-        </div>
-      )}
-      {serviceSeven && (
-        <div className="service-info">
-          <p>
-            Röntgen används oftast för att utesluta skelettskador efter ett
-            trauma, vid hältundersökningar eller besiktning. Med vårt
-            röntgensystem går det även att ta bilder från halsen och
-            tornutskotten på ryggen.
-          </p>
-        </div>
-      )}
-      {serviceEight && (
-        <div className="service-info">
-          <p>
-            Ultraljud används främst vid undersökning av skador i mjukdelarna,
-            senor, leder, rygg, buk, ögon mm. Det går även att undersöka
-            sakroiliakled och att göra gynekologiska undersökningar.
           </p>
         </div>
       )}

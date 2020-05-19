@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100%;
+  min-width: 100%;
 }
 
 h1 {
@@ -78,7 +79,7 @@ p {
 }
 
 #footer {
-  height: 27vh;
+  height: auto;
   text-align: center;
   /* align-items: center; */
   /* align-content: flex-end; */
@@ -195,7 +196,7 @@ ul {
 }
 
 #news-container {
-  height: 48vh;
+  height: auto;
   background-color: lightgray;
   color: black;
   padding: 4%;
@@ -244,17 +245,10 @@ ul {
   width: 100%;
 }
 
-#second-row {
-  margin-top: 3%;
+.service-row {
+margin-top: 3%;
 }
 
-#third-row {
-  margin-top: 3%;
-}
-
-#forth-row {
-  margin-top: 3%;
-}
 .service {
   background-size: cover;
   background-position: center;
@@ -338,6 +332,9 @@ ul {
 #contact {
   background-color: lightgray;
   padding: 5rem;
+  min-width: 100%;
+  min-height: 100%;
+  overflow: hidden;
 }
 #contact-info {
   text-align: center;
@@ -481,6 +478,8 @@ ul {
   padding-left: 5%;
   padding-right: 5%;
   text-align: center;
+  margin: 0;
+  overflow: hidden;
 }
 
 #construction-container h1{
@@ -498,11 +497,15 @@ font-size: 1.2rem;
   font-weight: 100;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   padding-bottom: 1%;
+
 }
 
 #construction-container img {
   padding-bottom: 3%;
   padding-top: 4%;
+  padding-right: 3%;
+  padding-left: 3%;
+  max-width: 95%;
 }
 
 #image-container {
@@ -513,7 +516,6 @@ font-size: 1.2rem;
   display: inline-block;
   height: 20rem;
   width: 20rem;
-  padding: 1%;
   overflow: hidden;
 }
 
