@@ -54,7 +54,7 @@ const TheTeam = () => {
         <div className="team-member">
           <img src="/images/45.jpg" alt="Emelie" />
           <div className="team-member-container">
-            <h2>Emelie</h2>
+            <h2>Emelie Fröjd Andersson</h2>
             <p>
               Emelie började jobba på Sporthästkliniken i December 2017. Hon har
               en hästgård ca en timma från Strömsholm med lite hobbyhästar,
@@ -64,9 +64,9 @@ const TheTeam = () => {
           </div>
         </div>
         <div className="team-member">
-          <img src="/images/IMG_4576.PNG" alt="Magnus" />
+          <img src="/images/IMG_4576.PNG" alt="Magnus" id='magnus-image'/>
           <div className="team-member-container">
-            <h2>Magnus Smederd </h2>
+            <h2>Magnus Smederöd </h2>
             <p>
               Hovslagare sedan 1993. Magnus är godkänd av Jordbruksverket och
               har examen i SHF Forbildning. Magnus innehar Mästarbrev sedan

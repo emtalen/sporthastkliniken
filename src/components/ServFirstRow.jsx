@@ -6,7 +6,7 @@ const ServFirstRow = () => {
   const [serviceThree, setServiceThree] = useState(false);
   return (
     <div id="row-container">
-      <div className='service-row'>
+      <div className="service-row">
         <div
           className="service"
           style={{ backgroundImage: 'url("/images/1_Sårskador.jpg")' }}
@@ -38,10 +38,10 @@ const ServFirstRow = () => {
             <h1>Ryggutredningar</h1>
           </div>
         </div>
-        
       </div>
       {serviceOne && (
         <div className="service-info">
+          <h3>Sårskador</h3>
           <p>
             Laura har en otrolig erfarenhet gällande alla typer av sårskador. Om
             olyckan skulle vara framme så har vi möjlighet att hjälpa till, även
@@ -51,6 +51,7 @@ const ServFirstRow = () => {
       )}
       {serviceTwo && (
         <div className="service-info">
+          <h3>Hältutredningar</h3>
           <p>
             Hälta är en vanlig åkomma hos våra hästar. Akuta kraftiga hältor är
             oftast orsakade av en traumatisk händelse i motsats till lindrigare
@@ -68,6 +69,7 @@ const ServFirstRow = () => {
       )}
       {serviceThree && (
         <div className="service-info">
+          <h3>Ryggutredningar</h3>
           <p>
             Ryggsmärta kan bero på förändringar i skelettet, muskler eller
             ligament och inte sällan är det en kombination av alla tre. Har
@@ -78,7 +80,6 @@ const ServFirstRow = () => {
           </p>
         </div>
       )}
-      
     </div>
   );
 };

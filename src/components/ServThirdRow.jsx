@@ -41,6 +41,7 @@ const ServThirdRow = () => {
       </div>
       {serviceSeven && (
         <div className="service-info">
+          <h3>Röntgen</h3>
           <p>
             Röntgen används oftast för att utesluta skelettskador efter ett
             trauma, vid hältundersökningar eller besiktning. Med vårt
@@ -51,6 +52,7 @@ const ServThirdRow = () => {
       )}
       {serviceEight && (
         <div className="service-info">
+          <h3>Ultraljud</h3>
           <p>
             Ultraljud används främst vid undersökning av skador i mjukdelarna,
             senor, leder, rygg, buk, ögon mm. Det går även att undersöka
@@ -60,6 +62,7 @@ const ServThirdRow = () => {
       )}
       {serviceNine && (
         <div className="service-info">
+          <h3>Shockwave Stötvågsbehandling</h3>
           <p>
             Används för behandling av muskelömhet i ryggar och skador på senor,
             senskidor, gaffelband med mera. Vi har en helt ny PiezoWave

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const ServForthRow = () => {
   const [serviceTen, setServiceTen] = useState(false);
@@ -29,16 +30,20 @@ const ServForthRow = () => {
         </div>
         <div
           className="service"
-          style={{ backgroundImage: 'url("/images/2_hält.jpg")' }}
+          style={{ backgroundImage: 'url("/images/IMG_1471s.jpg")' }}
           onMouseEnter={() => setServiceTwelve(true)}
           onMouseLeave={() => setServiceTwelve(false)}
         >
           <div className="service-name" id="twolines">
-            <h1>Hovslageri & Sjukbeslag</h1>
+            <h1>
+              Hovslageri
+              <br /> & Sjukbeslag
+            </h1>
           </div>
         </div>
         {serviceTen && (
           <div className="service-info">
+            <h3>Endoskopi</h3>
             <p>
               Med en 1.5m eller 3m lång fiberendoskop kan vi göra undersökningar
               av till exempel luftvägar, magsäck och urinvägar.
@@ -47,17 +52,19 @@ const ServForthRow = () => {
         )}
         {serviceEleven && (
           <div className="service-info">
+            <h3>Tandvård</h3>
             <p>
               Vi utför det grundliga inom tandvård; kontroller, raspning av
-              tänder samt borttagning av lättare tandsten. Laura gör även
-              kirurgiska ingrepp för borttagning av tänder på Husaby Hästklinik
-              i Skara. Bokning för tandborttagning sker direkt till Husaby
-              Hästklink, 0511-275 50 eller skara@husabyhastkliniken.se
+              tänder och borttagning av vargtänder . Laura gör även kirurgiska
+              ingrepp för borttagning av tänder på Husaby Hästklinik i Skara.
+              Bokning för tandborttagning sker direkt till Husaby Hästklink
+              0511-275 50 eller skara@husabyhastkliniken.se
             </p>
           </div>
         )}
         {serviceTwelve && (
           <div className="service-info">
+            <h3>Hovslageri & Sjukbeslag</h3>
             <p>Laura samarbetar med Smederöds Hovslageri.</p>
           </div>
         )}

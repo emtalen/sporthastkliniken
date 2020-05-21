@@ -41,6 +41,7 @@ const ServFifthRow = () => {
 
       {serviceThirteen && (
         <div className="service-info">
+          <h3>Kirurgi</h3>
           <p>
             Laura opererar jämna veckor tisdagar på Husaby Hästakut i Skara. Vid
             behov åker hon som konsulterande kirurg till olika hästkliniker i
@@ -56,6 +57,7 @@ const ServFifthRow = () => {
       )}
       {serviceFourteen && (
         <div className="service-info">
+          <h3>Rehab</h3>
           <p>
             Laura samarbetar med Equirehab Kvicksund, Hovslagare Magnus Smederöd
             samt MJ Equiphysio för Rehab. Hon gör tillsammans med hästägaren upp
@@ -65,6 +67,7 @@ const ServFifthRow = () => {
       )}
       {serviceFifthteen && (
         <div className="service-info">
+          <h3>Föreläsningar</h3>
           <p>
             Laura har varit aktivt inblandad i vidareutbildning av både
             hästveterinärer och djurägare i Sverige, Finland och USA. Hon

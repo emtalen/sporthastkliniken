@@ -24,6 +24,7 @@ const Contact = () => {
         <p style={{ fontStyle: 'italic' }}>Om vi är upptagna, skicka ett SMS så ringer vi upp. <br/>
         OBS- Vi tar inte emot bokningar på email.</p></p>
         <p>Övriga tider, skicka meddelande så ringer vi upp.</p>
+        <p>För bokningen av </p>
       </div>
       <div id='contact-greeting'>
         <p>VI SES! <br/>

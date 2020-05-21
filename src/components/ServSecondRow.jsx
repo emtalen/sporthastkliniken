@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 const ServSecondRow = () => {
   const [serviceFour, setServiceFour] = useState(false);
+
   const [serviceFive, setServiceFive] = useState(false);
   const [serviceSix, setServiceSix] = useState(false);
   return (
@@ -40,6 +41,7 @@ const ServSecondRow = () => {
       </div>
       {serviceFour && (
         <div className="service-info">
+          <h3>Regenerativ Terapi</h3>
           <p>
             Vi vill ligga i framkant när det gäller behandling av skador hos
             sporthästar och använder därför bland annat stamceller i behandling
@@ -51,6 +53,7 @@ const ServSecondRow = () => {
       )}
       {serviceFive && (
         <div className="service-info">
+          <h3>Medicinska Undersökningar</h3>
           <p>
             Undersökning av medicinska problem så som hosta, nedsatt prestation,
             hudproblem, avmagring, diarre eller återkommande fång.
@@ -59,6 +62,7 @@ const ServSecondRow = () => {
       )}
       {serviceSix && (
         <div className="service-info">
+          <h3>Besiktningar</h3>
           <p>
             Laura har lång erfarenhet från att bedöma röntgenbilder med hjälp
             från sin kirurgiutbildning. Som kirurg, vet man hur vissa
