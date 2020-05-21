@@ -63,6 +63,21 @@ const TheTeam = () => {
             </p>
           </div>
         </div>
+        <div className="team-member">
+          <img src="/images/IMG_4576.PNG" alt="Magnus" />
+          <div className="team-member-container">
+            <h2>Magnus Smederd </h2>
+            <p>
+              Hovslagare sedan 1993. Magnus är godkänd av Jordbruksverket och
+              har examen i SHF Forbildning. Magnus innehar Mästarbrev sedan
+              2015. Erfarenhet och skor flera discipliner; Dressyr, Hoppning,
+              Fälttävlan, Reining och Trav. Magnus utför även föl korregering
+              och ortopediska beslag på häst. Sedan 2019 jobbar han med
+              Black-Werkman Hoofcare, ett system som mäter hästens rörelse, steg
+              och hovens olika belastningsfaser.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
