@@ -345,7 +345,6 @@ margin-top: 3%;
 
 #contact {
   background-color: lightgray;
-  padding-top: 10%;
   min-width: 100%;
   min-height: 100%;
   overflow: hidden;
@@ -359,6 +358,8 @@ margin-top: 3%;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 100;
   text-transform: uppercase;
+  font-size: 3rem;
+    margin-top: 11%;
 }
 
 #contact-info p {
@@ -406,7 +407,7 @@ margin-top: 3%;
   margin: auto;
   display: inline-block;
   overflow: hidden;
-  margin-top: 10%;
+  margin-top: 11%;
   padding-bottom: 5%;
 }
 
@@ -415,7 +416,6 @@ margin-top: 3%;
   font-weight: 100;
   font-size: 3rem;
   color: black;
-  margin-top: 2%;
   text-align: center;
   text-transform: uppercase;
 }
@@ -460,7 +460,7 @@ margin-top: 3%;
 
 #partners {
   background: lightgray;
-  padding-top: 10%;
+  padding-top: 11%;
   padding-left: 6%;
   padding-right: 6%;
   padding-bottom: 6%;
@@ -471,7 +471,6 @@ margin-top: 3%;
   font-weight: 100;
   font-size: 3rem;
   color: black;
-  margin-top: 2%;
   text-align: center;
   text-transform: uppercase;
 }
@@ -508,7 +507,7 @@ margin-top: 3%;
 
 #construction-container {
   background: lightgray;
-  padding-top: 10%;
+  padding-top: 11%;
   padding-bottom: 5%;
   padding-left: 5%;
   padding-right: 5%;
