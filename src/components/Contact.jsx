@@ -70,6 +70,7 @@ const Contact = () => {
         allowfullscreen=""
         aria-hidden="false"
         tabindex="0"
+        title='map'
       ></iframe>
     </div>
   );

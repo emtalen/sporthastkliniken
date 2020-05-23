@@ -430,8 +430,8 @@ margin-top: 3%;
 }
 
 .team-member img {
-  height: 30rem;
-  width: auto;
+  width: 35%;
+  height: auto;
   float: left;
   padding-right: 3%;
 }
@@ -454,7 +454,7 @@ margin-top: 3%;
 }
 
 #magnus-image {
-  width: 31%;
+  width: 35%;
   height: auto;
 }
 
