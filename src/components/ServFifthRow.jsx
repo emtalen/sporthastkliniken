@@ -5,7 +5,7 @@ const ServFifthRow = () => {
   const [serviceFourteen, setServiceFourteen] = useState(false);
   const [serviceFifthteen, setServiceFifthteen] = useState(false);
   return (
-    <div>
+    <div id='last-row'>
       <div className="service-row">
         <div
           className="service"
@@ -16,6 +16,7 @@ const ServFifthRow = () => {
           <div className="service-name" id="one-line">
             <h1>Kirurgi</h1>
           </div>
+          
         </div>
         <div
           className="service"
