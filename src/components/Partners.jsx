@@ -38,7 +38,7 @@ const Partners = () => {
           rel="noopener noreferrer"
         >
           <img
-            src="/images/2019_Logosköld+text+Din_Ridsportsbutik(1).png"
+            src="/images/strömsholmlogga.png"
             alt="Strömsholms Sadelmakeri"
             id="forth-partner"
           />
