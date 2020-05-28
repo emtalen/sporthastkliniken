@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import useDocumentScrollThrottled from "../modules/scrollHandler";
 
 const Header = () => {
@@ -62,11 +62,11 @@ const Header = () => {
                 <p>Teamet</p>
               </NavLink>
             </div>
-            {/* <div className="dropdown-tab">
+            <div className="dropdown-tab">
               <NavLink to="/galleri" style={{ color: "white" }}>
                <p>Galleri</p> 
               </NavLink>
-            </div> */}
+            </div>
           </>
         )}
       </div>

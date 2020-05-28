@@ -425,3 +425,18 @@ ul {
 .team-member-container {
   overflow: hidden;
 }
+
+#gallery {
+  height: 100vh;
+  background-color: lightgray;
+}
+
+.instagram-photo {
+  height: 20rem;
+  width: 20rem;
+}
+
+.instagram-photo img {
+  height: inherit;
+  width: inherit;
+}
