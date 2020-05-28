@@ -13,7 +13,6 @@ const ServFirstRow = () => {
           onMouseEnter={() => setServiceOne(true)}
           onMouseLeave={() => setServiceOne(false)}
         >
-          {/* <img src="/images/1_Sårskador.jpg" alt="sårskador" className='service-img' /> */}
           <div className="service-name" id="one-line">
             <h1>Sårskador</h1>
           </div>

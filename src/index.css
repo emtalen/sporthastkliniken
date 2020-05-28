@@ -97,7 +97,7 @@ p {
   text-transform: uppercase;
   font-weight: 100;
   padding-top: 2%;
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .footer-info {
@@ -133,57 +133,51 @@ p {
   text-align: center;
   height: auto;
   width: 35%;
-float: right;
+  float: right;
   margin: 5%;
   margin-top: 11%;
   position: relative;
   color: black;
   padding: 3%;
-         background: rgba(255, 255, 255, 0.5);
-
-
+  background: rgba(255, 255, 255, 0.5);
 }
 
-#start-page-english{
+#start-page-english {
   background: lightgray;
   height: min-content;
   z-index: 0;
   text-align: center;
 }
 
-#start-page-english h1{
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+#start-page-english h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 100;
   font-size: 3rem;
-    color: black;
-    padding-top: 13%;
+  color: black;
+  padding-top: 13%;
 }
-
 
 .english-container {
   text-align: center;
   height: auto;
   width: 90%;
-  display: inline-block;  
+  display: inline-block;
   padding: 3%;
   overflow: hidden;
   padding-bottom: 6%;
-
 }
-
 
 #text-container h3 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 100;
   font-size: 135%;
-    color: black;
+  color: black;
 }
 
-#english-image{
-
+#english-image {
+  text-align: center;
   height: auto;
   width: 100%;
-
 }
 
 #service-container {
@@ -278,6 +272,7 @@ ul {
   text-align: center;
   width: 100%;
   padding-bottom: 10%;
+   
 }
 
 #service-header {
@@ -293,10 +288,19 @@ ul {
 #row-container {
   margin-top: 2%;
   width: 100%;
+  
 }
 
 .service-row {
-margin-top: 3%;
+  margin-top: 3%;
+}
+
+.service-row .service:hover {
+  animation: sinkDown 1.2s ease-in forwards;
+}
+
+.service-row .service {
+  animation: sinkUp 1.2s ease-in forwards;
 }
 
 .service {
@@ -314,6 +318,42 @@ margin-top: 3%;
 
 .service:hover {
   opacity: 0.3;
+} 
+
+@keyframes sinkDown {
+  0% {
+   margin-bottom: 0;
+  }
+  25% {
+   margin-bottom: 0.2%;
+  }
+  50% {
+   margin-bottom: 0.5%;
+  }
+  75% {
+   margin-bottom: 0.7%;
+  }
+  100% {
+   margin-bottom: 1%;
+  }
+}
+
+@keyframes sinkUp {
+  0% {
+    margin-bottom: 1%;
+  }
+  25% {
+    margin-bottom: 0.7%;
+  }
+  50% {
+    margin-bottom: 0.5%;
+  }
+  75% {
+    margin-bottom: 0.2%;
+  }
+  100% {
+    margin-bottom: 0%;
+  }
 }
 
 .service-info {
@@ -321,9 +361,9 @@ margin-top: 3%;
   display: inline-block;
   margin-top: 1.5%;
   text-align: center;
-    animation: opacityOn 1s normal forwards;
-    animation-delay: 0.2s;
-    opacity: 0;
+  animation: opacityOn 1.8s normal forwards;
+  animation-delay: 0.3s;
+  opacity: 0;
 }
 
 .service-info p {
@@ -333,30 +373,29 @@ margin-top: 3%;
   font-size: 1.2rem;
 }
 
-.service-info h3{
+.service-info h3 {
   color: black;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 100;
   text-transform: uppercase;
 }
 
-
 @keyframes opacityOn {
-    0% {
-        opacity: 0;
-    }
-    25% {
-        opacity: 0.25;
-    }
-    50% {
-        opacity: 0.5;
-    }
-    75% {
-        opacity: 0.75;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .service-name {
@@ -369,7 +408,7 @@ margin-top: 3%;
   height: auto;
 }
 
-.service-name h1{
+.service-name h1 {
   color: black;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 100;
@@ -383,7 +422,6 @@ margin-top: 3%;
 
 #one-line {
   padding: 3%;
-  
 }
 
 #contact {
@@ -402,10 +440,8 @@ margin-top: 3%;
   font-weight: 100;
   text-transform: uppercase;
   font-size: 3rem;
-    margin-top: 13%;
-
+  margin-top: 13%;
 }
-
 
 #contact-info p {
   color: black;
@@ -414,8 +450,8 @@ margin-top: 3%;
   font-weight: 100;
 }
 
-#contact-info-english{
-    text-align: center;
+#contact-info-english {
+  text-align: center;
 }
 
 #contact-info-english h1 {
@@ -424,7 +460,7 @@ margin-top: 3%;
   font-weight: 100;
   text-transform: uppercase;
   font-size: 3rem;
-    margin-top: 6%;
+  margin-top: 6%;
 }
 
 #contact-info-english p {
@@ -453,21 +489,19 @@ margin-top: 3%;
   width: 30%;
 }
 
-#opening-hours{
- display: inline-table;
-  padding: 2%;
-   width: 30%;
-
-}
-
-#booking{
+#opening-hours {
   display: inline-table;
   padding: 2%;
-   width: 30%;
+  width: 30%;
+}
+
+#booking {
+  display: inline-table;
+  padding: 2%;
+  width: 30%;
 }
 #team {
   background-color: lightgray;
-  
 }
 
 #team-container {
@@ -533,7 +567,7 @@ margin-top: 3%;
   padding-bottom: 6%;
 }
 
-#partner-header{
+#partner-header {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 100;
   font-size: 3rem;
@@ -562,7 +596,6 @@ margin-top: 3%;
   height: auto;
   width: 20%;
   padding-right: 5%;
-
 }
 
 #forth-partner {
@@ -583,7 +616,7 @@ margin-top: 3%;
   overflow: hidden;
 }
 
-#construction-container h1{
+#construction-container h1 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 100;
   font-size: 3rem;
@@ -593,12 +626,11 @@ margin-top: 3%;
 }
 
 #construction-container p {
-font-size: 1.2rem;
+  font-size: 1.2rem;
   color: black;
   font-weight: 100;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   padding-bottom: 1%;
-
 }
 
 #construction-container img {
@@ -623,7 +655,6 @@ font-size: 1.2rem;
 .row-image img {
   height: inherit;
   width: inherit;
-  
 }
 
 #logo-container {
@@ -631,20 +662,19 @@ font-size: 1.2rem;
 }
 
 #logo-image-1 {
- height: auto;
- width: 40%;
- padding-top: 0;
- padding: 3%;
- padding-bottom: 5%;
+  height: auto;
+  width: 40%;
+  padding-top: 0;
+  padding: 3%;
+  padding-bottom: 5%;
 }
 #logo-image-2 {
-height: auto;
- width: 15%;
- padding: 3%;
+  height: auto;
+  width: 15%;
+  padding: 3%;
 }
 #logo-image-3 {
-height: auto;
- width: 40%;
- padding: 3%;
+  height: auto;
+  width: 40%;
+  padding: 3%;
 }
-

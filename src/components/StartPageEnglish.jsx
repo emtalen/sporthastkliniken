@@ -19,7 +19,7 @@ const StartPageEnglish = () => {
           questions. We look forward hearing from you.
         </h3>
       </div>
-      <img src="/images/61-bw.jpg" alt="Front" id="english-image" />
+        <img src="/images/61-bw.jpg" alt="Front" id="english-image" />
     </div>
   );
 };
