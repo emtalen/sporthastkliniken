@@ -16,10 +16,9 @@ const Gallery = () => {
         );
       });
   }, []);
-  
+
   let displayPhotos;
   if (instagramFeed !== undefined) {
-    debugger;
     displayPhotos = instagramFeed.map((photo) => {
       return (
         <div className="instagram-photo">
