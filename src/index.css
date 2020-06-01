@@ -100,10 +100,8 @@ p {
 }
 
 .footer-info {
-  width: 30%;
   display: inline-block;
   padding: 3%;
-  padding-top: 1%;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 #hack {
@@ -566,6 +564,7 @@ ul {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 100;
   text-transform: uppercase;
+  font-size: 3rem;
   padding-bottom: 2%;
 }
 

@@ -5,18 +5,16 @@ const Footer = () => {
   return (
     <div id="footer">
       <h1>Kontakt</h1>
-      {/* <div id="info-container"> */}
       <div className="footer-info">
-        <Icon name="map marker alternate" />
-        <p>
-          Häljeby 4<br />
-          731 92 Köping
-          <br />
-          Sverige
-        </p>
+        <Icon name="instagram" size="large" />
+        <p>@sporthastkliniken</p>
       </div>
       <div className="footer-info">
-        <Icon name="phone" />
+        <Icon name="facebook square" size="large" />
+        <p>Sporthastkliniken Häljeby AB</p>
+      </div>
+      <div className="footer-info">
+        <Icon name="phone" size="large" />
         <p>
           BOKNING VIA TELEFON:
           <br />
@@ -27,19 +25,24 @@ const Footer = () => {
         </p>
       </div>
       <div className="footer-info" id="mail">
-        <Icon name="envelope outline" />
+        <Icon name="envelope outline" size="large" />
         <p>
           info@sporthastkliniken.se
           <p style={{ fontStyle: "italic" }}>
-            {" "}
             OBS! Vi tar inte emot bokningar via mail.
-            <br />
-          <p id='hack'>-</p>
           </p>
         </p>
       </div>
+      <div className="footer-info">
+        <Icon name="map marker alternate" size="large" />
+        <p>
+          Häljeby 4<br />
+          731 92 Köping
+          <br />
+          Sverige
+        </p>
+      </div>
     </div>
-    // </div>
   );
 };
 
