@@ -1,10 +1,12 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import axios from "axios";
+import { Modal, Image } from "semantic-ui-react";
 
 const Gallery = () => {
   const [instagramFeed, setInstagramFeed] = useState([]);
-
+  const [openPhoto, setOpenPhoto] = useState("");
+  
   useEffect(() => {
     axios
       .get(
@@ -21,9 +23,27 @@ const Gallery = () => {
   if (instagramFeed !== undefined) {
     displayPhotos = instagramFeed.map((photo) => {
       return (
-        <div className="instagram-photo">
-          <img src={photo.node.thumbnail_src} alt={photo.node.shortcode} />
-        </div>
+        <>
+          <div className="instagram-photo">
+            <img
+              id={photo.node.id}
+              src={photo.node.thumbnail_src}
+              alt={photo.node.shortcode}
+              onClick={() => setOpenPhoto(photo.node.display_url)}
+            />
+          </div>
+          {openPhoto !== "" && (
+            <Modal
+              open={true}
+              closeOnDimmerClick={true}
+              onClose={() => setOpenPhoto("")}
+            >
+              <Modal.Content image>
+                <Image src={openPhoto} alt={photo.node.shortcode} />
+              </Modal.Content>
+            </Modal>
+          )}
+        </>
       );
     });
   }
