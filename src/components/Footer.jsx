@@ -11,7 +11,7 @@ const Footer = () => {
       </div>
       <div className="footer-info">
         <Icon name="facebook square" size="large" />
-        <p>Sporthastkliniken Häljeby AB</p>
+        <p>Sporthästkliniken Häljeby AB</p>
       </div>
       <div className="footer-info">
         <Icon name="phone" size="large" />
@@ -38,8 +38,8 @@ const Footer = () => {
         <p>
           Häljeby 4<br />
           731 92 Köping
-          <br />
-          Sverige
+          {/* <br />
+          Sverige */}
         </p>
       </div>
     </div>
