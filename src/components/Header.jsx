@@ -63,8 +63,8 @@ const Header = () => {
               </NavLink>
             </div>
             <div className="dropdown-tab">
-              <NavLink to="/galleri" style={{ color: "white" }}>
-               <p>Galleri</p> 
+              <NavLink to="/galleri" className="tab">
+                <p>Galleri</p>
               </NavLink>
             </div>
           </>

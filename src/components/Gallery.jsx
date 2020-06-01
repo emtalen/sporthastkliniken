@@ -6,13 +6,14 @@ import { Modal, Image } from "semantic-ui-react";
 const Gallery = () => {
   const [instagramFeed, setInstagramFeed] = useState([]);
   const [openPhoto, setOpenPhoto] = useState("");
-  
+
   useEffect(() => {
     axios
       .get(
         'https://www.instagram.com/graphql/query?query_id=17888483320059182&variables={"id":"33288525717","first":60,"after":null}'
       )
       .then((response) => {
+        debugger
         setInstagramFeed(
           response.data.data.user.edge_owner_to_timeline_media.edges
         );
@@ -48,7 +49,9 @@ const Gallery = () => {
     });
   }
 
-  return <div id="gallery">{displayPhotos}</div>;
+  return <div id="gallery">
+    <h1>Galleri</h1>
+    {displayPhotos}</div>;
 };
 
 export default Gallery;
