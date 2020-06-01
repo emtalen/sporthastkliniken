@@ -1,13 +1,33 @@
 import React, { useState } from "react";
 
 const ServThirdRow = () => {
+  const [serviceSeven, setServiceSeven] = useState(false);
+  const [serviceEight, setServiceEight] = useState(false);
   const [serviceNine, setServiceNine] = useState(false);
-  const [serviceTen, setServiceTen] = useState(false);
-  const [serviceEleven, setServiceEleven] = useState(false);
-  const [serviceTwelve, setServiceTwelve] = useState(false);
+
   return (
     <div>
-      <div id="third-row">
+      <div className="service-row">
+        <div
+          className="service"
+          style={{ backgroundImage: 'url("/images/7_Röntgen1.jpg")' }}
+          onMouseEnter={() => setServiceSeven(true)}
+          onMouseLeave={() => setServiceSeven(false)}
+        >
+          <div className="service-name" id="one-line">
+            <h1>Röntgen</h1>
+          </div>
+        </div>
+        <div
+          className="service"
+          style={{ backgroundImage: 'url("/images/8_ultraljud.jpg")' }}
+          onMouseEnter={() => setServiceEight(true)}
+          onMouseLeave={() => setServiceEight(false)}
+        >
+          <div className="service-name" id="one-line">
+            <h1>Ultraljud</h1>
+          </div>
+        </div>
         <div
           className="service"
           style={{ backgroundImage: 'url("/images/9_shock.jpg")' }}
@@ -18,40 +38,31 @@ const ServThirdRow = () => {
             <h1>Shockwave - Stötvågsbehandling</h1>
           </div>
         </div>
-        <div
-          className="service"
-          style={{ backgroundImage: 'url("/images/10_endoskopi.jpg")' }}
-          onMouseEnter={() => setServiceTen(true)}
-          onMouseLeave={() => setServiceTen(false)}
-        >
-          <div className="service-name" id="one-line">
-            <h1>Endoskopi</h1>
-          </div>
-        </div>
-        <div
-          className="service"
-          style={{ backgroundImage: 'url("/images/11_tand.jpg")' }}
-          onMouseEnter={() => setServiceEleven(true)}
-          onMouseLeave={() => setServiceEleven(false)}
-        >
-          <div className="service-name" id="one-line">
-            <h1>Tandvård</h1>
-          </div>
-        </div>
-        <div
-          className="service"
-          style={{ backgroundImage: 'url("/images/2_hält.jpg")' }}
-          onMouseEnter={() => setServiceTwelve(true)}
-          onMouseLeave={() => setServiceTwelve(false)}
-        >
-          <div className="service-name" id="twolines">
-            <h1>Hovslageri & Sjukbeslag</h1>
-          </div>
-        </div>
       </div>
-
+      {serviceSeven && (
+        <div className="service-info">
+          <h3>Röntgen</h3>
+          <p>
+            Röntgen används oftast för att utesluta skelettskador efter ett
+            trauma, vid hältundersökningar eller besiktning. Med vårt
+            röntgensystem går det även att ta bilder från halsen och
+            tornutskotten på ryggen.
+          </p>
+        </div>
+      )}
+      {serviceEight && (
+        <div className="service-info">
+          <h3>Ultraljud</h3>
+          <p>
+            Ultraljud används främst vid undersökning av skador i mjukdelarna,
+            senor, leder, rygg, buk, ögon mm. Det går även att undersöka
+            sakroiliakled och att göra gynekologiska undersökningar.
+          </p>
+        </div>
+      )}
       {serviceNine && (
         <div className="service-info">
+          <h3>Shockwave Stötvågsbehandling</h3>
           <p>
             Används för behandling av muskelömhet i ryggar och skador på senor,
             senskidor, gaffelband med mera. Vi har en helt ny PiezoWave
@@ -60,30 +71,6 @@ const ServThirdRow = () => {
             anti-inflammatorisk effekt vilket ger fantastiskt resultat på
             muskelömhet.
           </p>
-        </div>
-      )}
-      {serviceTen && (
-        <div className="service-info">
-          <p>
-            Med en 1.5m eller 3m lång fiberendoskop kan vi göra undersökningar
-            av till exempel luftvägar, magsäck och urinvägar.
-          </p>
-        </div>
-      )}
-      {serviceEleven && (
-        <div className="service-info">
-          <p>
-            Vi utför det grundliga inom tandvård; kontroller, raspning av tänder
-            samt borttagning av lättare tandsten. Laura gör även kirurgiska
-            ingrepp för borttagning av tänder på Husaby Hästklinik i Skara.
-            Bokning för tandborttagning sker direkt till Husaby Hästklink,
-            0511-275 50 eller skara@husabyhastkliniken.se
-          </p>
-        </div>
-      )}
-      {serviceTwelve && (
-        <div className="service-info">
-          <p>Laura samarbetar med Smederöds Hovslageri.</p>
         </div>
       )}
     </div>

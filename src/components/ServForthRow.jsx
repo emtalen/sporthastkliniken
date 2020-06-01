@@ -1,80 +1,81 @@
 import React, { useState } from "react";
 
 const ServForthRow = () => {
-  const [serviceThirteen, setServiceThirteen] = useState(false);
-  const [serviceFourteen, setServiceFourteen] = useState(false);
-  const [serviceFifthteen, setServiceFifthteen] = useState(false);
+  const [serviceTen, setServiceTen] = useState(false);
+  const [serviceEleven, setServiceEleven] = useState(false);
+  const [serviceTwelve, setServiceTwelve] = useState(false);
   return (
     <div>
-      <div id="forth-row">
+      <div className="service-row">
         <div
           className="service"
-          style={{ backgroundImage: 'url("/images/12_kirurgi.jpg")' }}
-          onMouseEnter={() => setServiceThirteen(true)}
-          onMouseLeave={() => setServiceThirteen(false)}
+          style={{ backgroundImage: 'url("/images/10_endoskopi.jpg")' }}
+          onMouseEnter={() => setServiceTen(true)}
+          onMouseLeave={() => setServiceTen(false)}
         >
           <div className="service-name" id="one-line">
-            <h1>Kirurgi</h1>
+            <h1>Endoskopi</h1>
           </div>
         </div>
         <div
           className="service"
-          style={{ backgroundImage: 'url("/images/13_rehab.jpg")' }}
-          onMouseEnter={() => setServiceFourteen(true)}
-          onMouseLeave={() => setServiceFourteen(false)}
+          style={{ backgroundImage: 'url("/images/11_tand.jpg")' }}
+          onMouseEnter={() => setServiceEleven(true)}
+          onMouseLeave={() => setServiceEleven(false)}
         >
           <div className="service-name" id="one-line">
-            <h1>Rehab</h1>
+            <h1>Tandvård</h1>
           </div>
         </div>
         <div
           className="service"
-          style={{ backgroundImage: 'url("/images/14_förel.jpg")' }}
-          onMouseEnter={() => setServiceFifthteen(true)}
-          onMouseLeave={() => setServiceFifthteen(false)}
+          style={{ backgroundImage: 'url("/images/IMG_1471s.jpg")' }}
+          onMouseEnter={() => setServiceTwelve(true)}
+          onMouseLeave={() => setServiceTwelve(false)}
         >
-          <div className="service-name" id="one-line">
-            <h1>Föreläsningar</h1>
+          <div className="service-name" id="twolines">
+            <h1>
+              Hovslageri
+              <br /> & Sjukbeslag
+            </h1>
           </div>
         </div>
+        {serviceTen && (
+          <div className="service-info">
+            <h3>Endoskopi</h3>
+            <p>
+              Med en 1.5m eller 3m lång fiberendoskop kan vi göra undersökningar
+              av till exempel luftvägar, magsäck och urinvägar.
+            </p>
+          </div>
+        )}
+        {serviceEleven && (
+          <div className="service-info">
+            <h3>Tandvård</h3>
+            <p>
+              Vi utför det grundliga inom tandvård; kontroller, raspning av
+              tänder och borttagning av vargtänder . Laura gör även kirurgiska
+              ingrepp för borttagning av tänder på Husaby Hästklinik i Skara.
+              Bokning för tandborttagning sker direkt till Husaby Hästklink
+              0511-275 50 eller skara@husabyhastkliniken.se
+            </p>
+          </div>
+        )}
+        {serviceTwelve && (
+          <div className="service-info">
+            <h3>Hovslageri & Sjukbeslag</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum..
+            </p>
+          </div>
+        )}
       </div>
-
-      {serviceThirteen && (
-        <div className="service-info">
-          <p>
-            Laura opererar jämna veckor tisdagar på Husaby Hästakut i Skara. Vid
-            behov åker hon som konsulterande kirurg till olika hästkliniker i
-            Norden samt gör en hel del ingrepp på stående häst. Laura har under
-            sin 3-åriga specialistutbildning inom hästkirurgi i USA arbetat med
-            världens ledande hästkirurger. Hon är den enda med amerikanskt
-            diplom i hästkirurgi i Sverige och är den enda som har gjort en
-            ledbrosktransplantion på häst i Sverige. Hon har stor erfarenhet
-            från bland annat titthålskirurgi, frakturoperationer och
-            kolikoperationer.
-          </p>
-        </div>
-      )}
-      {serviceFourteen && (
-        <div className="service-info">
-          <p>
-            Laura samarbetar med Equirehab Kvicksund, Hovslagare Magnus Smederöd
-            samt MJ Equiphysio för Rehab. Hon gör tillsammans med hästägaren upp
-            en rehabiliteringsplan och är därefter involverad i utvecklingen.
-          </p>
-        </div>
-      )}
-      {serviceFifthteen && (
-        <div className="service-info">
-          <p>
-            Laura har varit aktivt inblandad i vidareutbildning av både
-            hästveterinärer och djurägare i Sverige, Finland och USA. Hon
-            sträver jämt efter bra samarbeta med hovslagare, fysioterapeuter,
-            tränare etc. och föreläser gärna ihop med experter från olika
-            grenar. Tveka inte att höra av er om ni har frågor eller önskar boka
-            föreläsning.
-          </p>
-        </div>
-      )}
     </div>
   );
 };

@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100%;
+  min-width: 100%;
 }
 
 h1 {
@@ -77,18 +78,17 @@ p {
 }
 
 #footer {
-  height: 27vh;
+  height: auto;
   text-align: center;
-  /* align-items: center; */
-  /* align-content: flex-end; */
   width: 100%;
   bottom: 0;
   background-color: #290202;
-  color: white;
+  color: lightgray;
   z-index: 3;
   padding-top: 1%;
   padding-bottom: 1%;
   overflow: hidden;
+  transition: ease-in 0.5s;
 }
 
 #footer h1 {
@@ -96,6 +96,7 @@ p {
   text-transform: uppercase;
   font-weight: 100;
   padding-top: 2%;
+  font-size: 1.5rem;
 }
 
 .footer-info {
@@ -109,28 +110,73 @@ p {
   color: #290202;
 }
 #start-page {
-  height: 100vh;
   background-image: url("/images/0-bw.jpg");
   background-size: cover;
+  height: 100vh;
   z-index: 0;
 }
 
 #short-info h1 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 100;
+  font-size: 1.9rem;
+}
+
+#short-info h3 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 100;
+  font-size: 135%;
 }
 
 #short-info {
+  text-align: center;
   height: auto;
-  width: 40%;
+  width: 35%;
   float: right;
-  margin: 2rem;
-  margin-top: 15rem;
+  margin: 5%;
+  margin-top: 11%;
   position: relative;
-  background-color: black;
-  opacity: 0.6;
-  color: white;
-  padding: 1rem;
+  color: black;
+  padding: 3%;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+#start-page-english {
+  background: lightgray;
+  height: min-content;
+  z-index: 0;
+  text-align: center;
+}
+
+#start-page-english h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 100;
+  font-size: 3rem;
+  color: black;
+  padding-top: 13%;
+}
+
+.english-container {
+  text-align: center;
+  height: auto;
+  width: 90%;
+  display: inline-block;
+  padding: 3%;
+  overflow: hidden;
+  padding-bottom: 6%;
+}
+
+#text-container h3 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 100;
+  font-size: 135%;
+  color: black;
+}
+
+#english-image {
+  text-align: center;
+  height: auto;
+  width: 100%;
 }
 
 #service-container {
@@ -193,7 +239,7 @@ ul {
 }
 
 #news-container {
-  height: 40vh;
+  height: auto;
   background-color: lightgray;
   color: black;
   padding: 4%;
@@ -224,7 +270,8 @@ ul {
   overflow: hidden;
   text-align: center;
   width: 100%;
-  padding-bottom: 3%;
+  padding-bottom: 10%;
+   
 }
 
 #service-header {
@@ -232,7 +279,7 @@ ul {
   font-weight: 100;
   font-size: 3rem;
   color: black;
-  margin-top: 11%;
+  margin-top: 13%;
   text-align: center;
   text-transform: uppercase;
 }
@@ -240,19 +287,21 @@ ul {
 #row-container {
   margin-top: 2%;
   width: 100%;
+  
 }
 
-#second-row {
+.service-row {
   margin-top: 3%;
 }
 
-#third-row {
-  margin-top: 3%;
+.service-row .service:hover {
+  animation: sinkDown 1.2s ease-in forwards;
 }
 
-#forth-row {
-  margin-top: 3%;
+.service-row .service {
+  animation: sinkUp 1.2s ease-in forwards;
 }
+
 .service {
   background-size: cover;
   background-position: center;
@@ -263,11 +312,47 @@ ul {
   height: 20rem;
   width: 20rem;
   overflow: hidden;
-  transition: ease-in 0.5s;
+  transition: ease-in 1s;
 }
 
 .service:hover {
-  opacity: 0.7;
+  opacity: 0.3;
+} 
+
+@keyframes sinkDown {
+  0% {
+   margin-bottom: 0;
+  }
+  25% {
+   margin-bottom: 0.2%;
+  }
+  50% {
+   margin-bottom: 0.5%;
+  }
+  75% {
+   margin-bottom: 0.7%;
+  }
+  100% {
+   margin-bottom: 1%;
+  }
+}
+
+@keyframes sinkUp {
+  0% {
+    margin-bottom: 1%;
+  }
+  25% {
+    margin-bottom: 0.7%;
+  }
+  50% {
+    margin-bottom: 0.5%;
+  }
+  75% {
+    margin-bottom: 0.2%;
+  }
+  100% {
+    margin-bottom: 0%;
+  }
 }
 
 .service-info {
@@ -275,10 +360,9 @@ ul {
   display: inline-block;
   margin-top: 1.5%;
   text-align: center;
-  /* transition: 1s ease-in; */
-  animation: opacityOn 0.5s normal forwards;
-    animation-delay: 0.2s;
-    opacity: 0;
+  animation: opacityOn 1.8s normal forwards;
+  animation-delay: 0.3s;
+  opacity: 0;
 }
 
 .service-info p {
@@ -288,41 +372,47 @@ ul {
   font-size: 1.2rem;
 }
 
+.service-info h3 {
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+}
 
 @keyframes opacityOn {
-    0% {
-        opacity: 0;
-    }
-    25% {
-        opacity: 0.25;
-    }
-    50% {
-        opacity: 0.5;
-    }
-    75% {
-        opacity: 0.75;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .service-name {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.7);
   text-align: center;
   width: inherit;
   padding: 1%;
-  margin-top: 33%;
+  margin-top: 40%;
   font-size: 2rem;
-  height: 30%;
+  height: auto;
 }
 
 .service-name h1 {
   color: black;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 100;
-
-  opacity: 1;
+  font-size: 1.4rem;
+  text-transform: uppercase;
 }
 
 #two-lines {
@@ -330,16 +420,17 @@ ul {
 }
 
 #one-line {
-  padding: 7%;
+  padding: 3%;
 }
 
 #contact {
   background-color: lightgray;
-  padding: 5rem;
+  min-width: 100%;
+  min-height: 100%;
+  overflow: hidden;
 }
 #contact-info {
   text-align: center;
-  margin-top: 8rem;
 }
 
 #contact-info h1 {
@@ -347,6 +438,8 @@ ul {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 100;
   text-transform: uppercase;
+  font-size: 3rem;
+  margin-top: 13%;
 }
 
 #contact-info p {
@@ -356,9 +449,29 @@ ul {
   font-weight: 100;
 }
 
+#contact-info-english {
+  text-align: center;
+}
+
+#contact-info-english h1 {
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-top: 6%;
+}
+
+#contact-info-english p {
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
 #contact-greeting {
-  margin-top: 4rem;
-  font-size: 1.5rem;
+  margin-top: 4%;
+  font-size: 1.7rem;
   font-weight: 150;
   text-align: center;
   color: black;
@@ -369,6 +482,23 @@ ul {
   height: 40rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+
+#contact-logo {
+  height: auto;
+  width: 30%;
+}
+
+#opening-hours {
+  display: inline-table;
+  padding: 2%;
+  width: 30%;
+}
+
+#booking {
+  display: inline-table;
+  padding: 2%;
+  width: 30%;
+}
 #team {
   background-color: lightgray;
 }
@@ -377,7 +507,7 @@ ul {
   margin: auto;
   display: inline-block;
   overflow: hidden;
-  margin-top: 10%;
+  margin-top: 13%;
   padding-bottom: 5%;
 }
 
@@ -386,7 +516,6 @@ ul {
   font-weight: 100;
   font-size: 3rem;
   color: black;
-  margin-top: 2%;
   text-align: center;
   text-transform: uppercase;
 }
@@ -401,8 +530,8 @@ ul {
 }
 
 .team-member img {
-  height: 30rem;
-  width: auto;
+  width: 35%;
+  height: auto;
   float: left;
   padding-right: 3%;
 }
@@ -410,7 +539,6 @@ ul {
 .team-member p {
   font-size: 1.2rem;
   color: black;
-  font-family: "Helvetica";
   font-weight: 100;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
@@ -458,3 +586,127 @@ ul {
 .instagram-photo img:hover {
   opacity: 0.4;
 } 
+#magnus-image {
+  width: 35%;
+  height: auto;
+}
+
+#partners {
+  background: lightgray;
+  padding-top: 13%;
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-bottom: 6%;
+}
+
+#partner-header {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 100;
+  font-size: 3rem;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.partner-row {
+  text-align: center;
+  overflow: hidden;
+  padding-top: 5%;
+}
+
+#first-partner {
+  padding-right: 5%;
+}
+
+#second-partner {
+  height: auto;
+  width: 50%;
+  padding-bottom: 5%;
+}
+
+#third-partner {
+  height: auto;
+  width: 20%;
+  padding-right: 5%;
+}
+
+#forth-partner {
+  height: auto;
+  width: 50%;
+  padding-bottom: 5%;
+  padding-left: 3%;
+}
+
+#construction-container {
+  background: lightgray;
+  padding-top: 13%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
+  margin: 0;
+  overflow: hidden;
+}
+
+#construction-container h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 100;
+  font-size: 3rem;
+  color: black;
+  text-transform: uppercase;
+  padding-bottom: 3%;
+}
+
+#construction-container p {
+  font-size: 1.2rem;
+  color: black;
+  font-weight: 100;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding-bottom: 1%;
+}
+
+#construction-container img {
+  padding-bottom: 3%;
+  padding-top: 4%;
+  padding-right: 3%;
+  padding-left: 3%;
+  max-width: 95%;
+}
+
+#image-container {
+  display: inline-block;
+}
+
+.row-image {
+  display: inline-block;
+  height: 20rem;
+  width: 20rem;
+  overflow: hidden;
+}
+
+.row-image img {
+  height: inherit;
+  width: inherit;
+}
+
+#logo-container {
+  display: inline-block;
+}
+
+#logo-image-1 {
+  height: auto;
+  width: 40%;
+  padding-top: 0;
+  padding: 3%;
+  padding-bottom: 5%;
+}
+#logo-image-2 {
+  height: auto;
+  width: 15%;
+  padding: 3%;
+}
+#logo-image-3 {
+  height: auto;
+  width: 40%;
+  padding: 3%;
+}

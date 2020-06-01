@@ -4,17 +4,15 @@ const ServFirstRow = () => {
   const [serviceOne, setServiceOne] = useState(false);
   const [serviceTwo, setServiceTwo] = useState(false);
   const [serviceThree, setServiceThree] = useState(false);
-  const [serviceFour, setServiceFour] = useState(false);
   return (
     <div id="row-container">
-      <div id="first-row">
+      <div className="service-row">
         <div
           className="service"
           style={{ backgroundImage: 'url("/images/1_Sårskador.jpg")' }}
           onMouseEnter={() => setServiceOne(true)}
           onMouseLeave={() => setServiceOne(false)}
         >
-          {/* <img src="/images/1_Sårskador.jpg" alt="sårskador" className='service-img' /> */}
           <div className="service-name" id="one-line">
             <h1>Sårskador</h1>
           </div>
@@ -39,28 +37,24 @@ const ServFirstRow = () => {
             <h1>Ryggutredningar</h1>
           </div>
         </div>
-        <div
-          className="service"
-          style={{ backgroundImage: 'url("/images/4_regen.jpg")' }}
-          onMouseEnter={() => setServiceFour(true)}
-          onMouseLeave={() => setServiceFour(false)}
-        >
-          <div className="service-name" id="one-line">
-            <h1>Regenerativ Terapi</h1>
-          </div>
-        </div>
       </div>
       {serviceOne && (
         <div className="service-info">
+          <h3>Sårskador</h3>
           <p>
-            Laura har en otrolig erfarenhet gällande alla typer av sårskador. Om
-            olyckan skulle vara framme så har vi möjlighet att hjälpa till, även
-            med akuta fall - i mån av tid.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </div>
       )}
       {serviceTwo && (
         <div className="service-info">
+          <h3>Hältutredningar</h3>
           <p>
             Hälta är en vanlig åkomma hos våra hästar. Akuta kraftiga hältor är
             oftast orsakade av en traumatisk händelse i motsats till lindrigare
@@ -78,6 +72,7 @@ const ServFirstRow = () => {
       )}
       {serviceThree && (
         <div className="service-info">
+          <h3>Ryggutredningar</h3>
           <p>
             Ryggsmärta kan bero på förändringar i skelettet, muskler eller
             ligament och inte sällan är det en kombination av alla tre. Har
@@ -85,17 +80,6 @@ const ServFirstRow = () => {
             och mjukdelsförändringar samt kolla genom utrustning och
             träningsrutiner. Individuellt rehabiliteringsprogram anpassat till
             hästen och ryttaren är nyckel till framgång.
-          </p>
-        </div>
-      )}
-      {serviceFour && (
-        <div className="service-info">
-          <p>
-            Vi vill ligga i framkant när det gäller behandling av skador hos
-            sporthästar och använder därför bland annat stamceller i behandling
-            av senskador för optimal läkning. Vi har tillgång till den senaste
-            tekniken när det gäller behandling av ledinflammation med så kallad
-            i-RAP.
           </p>
         </div>
       )}

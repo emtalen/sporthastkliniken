@@ -54,12 +54,27 @@ const TheTeam = () => {
         <div className="team-member">
           <img src="/images/45.jpg" alt="Emelie" />
           <div className="team-member-container">
-            <h2>Emelie</h2>
+            <h2>Emelie Fröjd Andersson</h2>
             <p>
               Emelie började jobba på Sporthästkliniken i December 2017. Hon har
               en hästgård ca en timma från Strömsholm med lite hobbyhästar,
               hundar, katter och älgar inpå knuten. Emelie är mammaledig men har
               nu börjat mjukstarta med att jobba Torsdagar varje vecka.
+            </p>
+          </div>
+        </div>
+        <div className="team-member">
+          <img src="/images/IMG_4576.PNG" alt="Magnus" id='magnus-image'/>
+          <div className="team-member-container">
+            <h2>Magnus Smederöd </h2>
+            <p>
+              Hovslagare sedan 1993. Magnus är godkänd av Jordbruksverket och
+              har examen i SHF Forbildning. Magnus innehar Mästarbrev sedan
+              2015. Erfarenhet och skor flera discipliner; Dressyr, Hoppning,
+              Fälttävlan, Reining och Trav. Magnus utför även föl korregering
+              och ortopediska beslag på häst. Sedan 2019 jobbar han med
+              Black-Werkman Hoofcare, ett system som mäter hästens rörelse, steg
+              och hovens olika belastningsfaser.
             </p>
           </div>
         </div>

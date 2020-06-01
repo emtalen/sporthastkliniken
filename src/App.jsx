@@ -8,6 +8,8 @@ import Services from "./components/Services";
 import Contact from './components/Contact'
 import TheClinic from './components/TheClinic'
 import Gallery from './components/Gallery'
+import Partners from "./components/Partners";
+import English from "./components/English";
 
 const App = () => {
     
@@ -22,6 +24,8 @@ const App = () => {
         <Route exact path="/kontakt" component={Contact}></Route>
         <Route exact path="/kliniken" component={TheClinic}></Route>
         <Route exact path='/galleri' component={Gallery}></Route>
+        <Route exact path='/partners' component={Partners}></Route>
+        <Route exact path='/english' component={English}></Route>
       </Switch>
      <Footer />
     </>
