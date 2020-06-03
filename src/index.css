@@ -615,6 +615,8 @@ ul {
 
 #first-partner {
   padding-right: 5%;
+  height: auto;
+  width: 20%;
 }
 
 #second-partner {
@@ -633,6 +635,19 @@ ul {
   height: auto;
   width: 50%;
   padding-bottom: 5%;
+  padding-left: 3%;
+}
+
+#fifth-partner {
+  height: auto;
+  width: 25%;
+  padding-right: 5%;
+}
+
+#sixth-partner {
+  height: auto;
+  width: 50%;
+  padding-bottom: 2%;
   padding-left: 3%;
 }
 

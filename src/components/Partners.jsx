@@ -46,14 +46,25 @@ const Partners = () => {
       </div>
       <div className="partner-row">
         <a
+          href="https://www.aislingequestrian.se/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="/images/Aisling_Equestrian_logga.jpeg"
+            alt="Aisling Equestrian"
+            id="fifth-partner"
+          />
+        </a>
+        <a
           href="http://www.husabyhastklinik.se/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <img
             src="/images/Logo_HusabyHakut_liggande_beige_rgb_72dpi.jpg"
-            alt="G Construct"
-            id="fifth-partner"
+            alt="Husaby Hästklinik"
+            id="sixth-partner"
           />
         </a>
       </div>
