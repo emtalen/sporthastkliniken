@@ -36,7 +36,7 @@ const HomePageServices = () => {
               </ul>
             </div>
 
-            <div className="list-items">
+            <div className="list-items" id='last-list'>
               <ul>
                 <li>Kirurgi</li>
                 <li>Rehab</li>

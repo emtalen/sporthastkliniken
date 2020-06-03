@@ -100,8 +100,11 @@ p {
 }
 
 .footer-info {
-  display: inline-block;
-  padding: 3%;
+  display: inline-table; 
+  padding-right: 3%;
+  padding-left: 3%;
+  margin-bottom: 3%;
+  margin-top: 1%;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 #hack {
@@ -198,7 +201,7 @@ p {
   margin: 1%;
   border: outset black 1px;
   padding: 1%;
-  width: fit-content;
+  /* width: fit-content; */
   display: inline-block;
 }
 
@@ -209,24 +212,27 @@ p {
 }
 
 #listcontainer {
-  margin: auto;
-  position: relative;
   display: inline-flex;
+  text-align: center;
 }
 
 .list-items {
-  width: fit-content;
-  display: inline-block;
+  display: inline-table;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1.2rem;
   font-weight: 100;
-  padding: 1.5rem;
-  padding-top: 0.1rem;
-  padding-right: 2rem;
+  text-align: center;
+  padding: 0.5%;
+  padding-right: 2%;
 }
 
 ul {
   list-style: none;
+  text-align: center;
+}
+
+#last-list{
+  padding-right: 4%;
 }
 
 #image-goes-here {
