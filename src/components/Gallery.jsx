@@ -13,12 +13,11 @@ const Gallery = () => {
         'https://www.instagram.com/graphql/query?query_id=17888483320059182&variables={"id":"33288525717","first":60,"after":null}'
       )
       .then((response) => {
-        debugger
         setInstagramFeed(
           response.data.data.user.edge_owner_to_timeline_media.edges
         );
       });
-  }, []);
+  });
 
   let displayPhotos;
   if (instagramFeed !== undefined) {
