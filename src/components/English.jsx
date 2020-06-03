@@ -6,7 +6,7 @@ const English = () => {
   return (
     <>
     <StartPageEnglish/>
-    <ContactEnglish/>
+    {/* <ContactEnglish/> */}
     </>
   );
 };

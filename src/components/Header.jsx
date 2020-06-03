@@ -31,7 +31,7 @@ const Header = () => {
       <NavLink to="/" style={{ color: "white" }}>
         <img src="/images/Sporthastkliniken_liggande_vit_RGB.png" alt="logo" />
       </NavLink>
-      <div>
+      {/* <div>
         <NavLink to="/english" className="header-tab">
           English
         </NavLink>
@@ -74,7 +74,7 @@ const Header = () => {
             </div>
           </>
         )}
-      </div>
+      </div> */}
       {/* <div className="header-tab">
         <NavLink to="/nyheter" style={{ color: "white" }}>
           NYHETER

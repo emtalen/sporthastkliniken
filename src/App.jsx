@@ -17,7 +17,8 @@ const App = () => {
   return (
     <>
       <Header />
-      <Switch>
+      <English/>
+      {/* <Switch>
         <Route exact path="/" component={Home}></Route>
         <Route exact path="/teamet" component={TheTeam}></Route>
         <Route exact path="/tjänster" component={Services}></Route>
@@ -26,7 +27,7 @@ const App = () => {
         <Route exact path='/galleri' component={Gallery}></Route>
         <Route exact path='/partners' component={Partners}></Route>
         <Route exact path='/english' component={English}></Route>
-      </Switch>
+      </Switch> */}
      <Footer />
     </>
   );
