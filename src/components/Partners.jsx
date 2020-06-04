@@ -51,7 +51,7 @@ const Partners = () => {
           rel="noopener noreferrer"
         >
           <img
-            src="/images/Aisling_Equestrian_logga.jpeg"
+            src="/images/Logga_black.png"
             alt="Aisling Equestrian"
             id="fifth-partner"
           />

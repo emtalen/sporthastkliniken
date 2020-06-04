@@ -7,8 +7,9 @@ const Gallery = () => {
   const [instagramFeed, setInstagramFeed] = useState([]);
   const [openPhoto, setOpenPhoto] = useState("");
 
-  useEffect(() => {
-    axios
+  let displayPhotos;
+  const fetchPhotos = async () => {
+    await axios
       .get(
         'https://www.instagram.com/graphql/query?query_id=17888483320059182&variables={"id":"33288525717","first":60,"after":null}'
       )
@@ -17,9 +18,11 @@ const Gallery = () => {
           response.data.data.user.edge_owner_to_timeline_media.edges
         );
       });
-  });
+  };
+  useEffect(() => {
+    fetchPhotos();
+  }, []);
 
-  let displayPhotos;
   if (instagramFeed !== undefined) {
     displayPhotos = instagramFeed.map((photo) => {
       return (
@@ -48,9 +51,12 @@ const Gallery = () => {
     });
   }
 
-  return <div id="gallery">
-    <h1>Galleri</h1>
-    {displayPhotos}</div>;
+  return (
+    <div id="gallery">
+      <h1>Galleri</h1>
+      {displayPhotos}
+    </div>
+  );
 };
 
 export default Gallery;

@@ -72,11 +72,11 @@ const Header = () => {
                 <p>Galleri</p>
               </NavLink>
             </div>
-            <div className="dropdown-tab">
+            {/* <div className="dropdown-tab">
               <NavLink to="/nyheter" className="tab">
                 <p>Nyheter</p>
               </NavLink>
-            </div>
+            </div> */}
           </>
         )}
       </div>
