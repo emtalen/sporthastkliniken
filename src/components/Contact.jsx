@@ -17,7 +17,7 @@ const Contact = () => {
           </p>
           <p style={{ fontWeight: 500 }}>
             Måndag, Onsdag-Fredag:
-            <p>Från 08:30</p>
+            <p>Från 08:00</p>
           </p>
           <p style={{ fontWeight: 500, marginTop: "-0.5rem" }}>
             Tisdag:
@@ -48,7 +48,7 @@ const Contact = () => {
           <p style={{ fontSize: "1.4rem" }}>
             Bokning av operation
             <p>
-              +46 511-275 50 <br /> skara@husabyhastkliniken.se
+              +46 511-275 50 <br /> skara@husabyhastklinik.se
             </p>
           </p>
         </div>

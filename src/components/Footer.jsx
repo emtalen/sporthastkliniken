@@ -4,7 +4,6 @@ import { Icon } from "semantic-ui-react";
 const Footer = () => {
   return (
     <div id="footer">
-      <h1>Kontakt</h1>
       <div className="footer-info">
         <a
           href="https://www.instagram.com/sporthastkliniken/"
@@ -13,7 +12,9 @@ const Footer = () => {
           style={{ color: "lightGrey" }}
         >
           <Icon name="instagram" size="large" />
-          <p>@sporthastkliniken</p>
+          <p>
+            <br /> @sporthastkliniken
+          </p>
         </a>
       </div>
       <div className="footer-info">
@@ -24,15 +25,18 @@ const Footer = () => {
           style={{ color: "lightGrey" }}
         >
           <Icon name="facebook square" size="large" />
-          <p>Sporthästkliniken Häljeby AB</p>
+          <p>
+            <br /> Sporthästkliniken Häljeby AB
+          </p>
         </a>
       </div>
       <div className="footer-info">
         <Icon name="phone" size="large" />
         <p>
+          <br />
           BOKNING VIA TELEFON:
           <br />
-          +46 07 378 41 10
+          +46 70 378 41 10
           <p style={{ fontStyle: "italic" }}>
             Om vi är upptagna, skicka ett SMS så ringer vi upp.
           </p>
@@ -45,6 +49,7 @@ const Footer = () => {
         >
           <Icon name="envelope outline" size="large" />
           <p>
+            <br />
             info@sporthastkliniken.se
             <p style={{ fontStyle: "italic" }}>
               OBS! Vi tar inte emot bokningar via mail.
@@ -61,6 +66,7 @@ const Footer = () => {
         >
           <Icon name="map marker alternate" size="large" />
           <p>
+            <br />
             Häljeby 4<br />
             731 92 Köping
             <br />

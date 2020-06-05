@@ -11,37 +11,29 @@ const HomePageServices = () => {
           </NavLink>
           <div id="listcontainer">
             <div className="list-items">
-              <ul>
-                <li>Sårskador</li>
-                <li>Hältutredningar</li>
-                <li>Ryggutredningar</li>
-                <li>Regenerativ Terapi</li>
-              </ul>
+              <p>Sårskador</p>
+              <p>Hältutredningar</p>
+              <p>Medicinska Undersökningar</p>
             </div>
             <div className="list-items">
-              <ul>
-                <li>Medicinska Undersökningar</li>
-                <li>Besiktningar</li>
-                <li>Röntgen</li>
-                <li>Ultraljud</li>
-              </ul>
+              <p>Röntgen</p>
+              <p>Kirurgi</p>
+              <p>Shockwave</p>
             </div>
-
             <div className="list-items">
-              <ul>
-                <li>Shockwave</li>
-                <li>Endoskopi</li>
-                <li>Tandvård</li>
-                <li>Hovslageri & Sjukbeslag</li>
-              </ul>
+              <p>Endoskopi</p>
+              <p>Tandvård</p>
+              <p>Hovslageri & Sjukbeslag</p>
             </div>
-
-            <div className="list-items" id='last-list'>
-              <ul>
-                <li>Kirurgi</li>
-                <li>Rehab</li>
-                <li>Föreläsningar</li>
-              </ul>
+            <div className="list-items">
+              <p>Regenerativ Terapi</p>
+              <p>Besiktningar</p>
+              <p>Ultraljud</p>
+            </div>
+            <div className="list-items" id="last-list">
+              <p>Ryggutredningar</p>
+              <p>Rehab</p>
+              <p>Föreläsningar</p>
             </div>
           </div>
         </div>

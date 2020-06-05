@@ -17,14 +17,14 @@ const ContactEnglish = () => {
           </p>
           <p style={{ fontWeight: 500 }}>
             Monday, Wednesday-Friday:
-            <p>From 08:30</p>
+            <p>From 08:00</p>
           </p>
           <p style={{ fontWeight: 500, marginTop: "-0.5rem" }}>
             Tuesday:
             <p>
-              Week 1, 3, 5 etc: CLOSED (Surgeries in Skara)
+              Uneven weeks: CLOSED (Surgeries in Skara)
               <br />
-              Week 2, 4, 6 etc: from 12:00
+              Even weeks: from 12:00
             </p>
           </p>
           <p style={{ fontWeight: 500, marginTop: "-0.5rem" }}>
@@ -49,7 +49,7 @@ const ContactEnglish = () => {
           <p style={{ fontSize: "1.4rem" }}>
             Booking of surgery
             <p>
-              +46 511-275 50 <br /> skara@husabyhastkliniken.se
+              +46 511-275 50 <br /> skara@husabyhastklinik.se
             </p>
           </p>
         </div>

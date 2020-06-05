@@ -5,6 +5,27 @@ const Partners = () => {
     <div id="partners">
       <h1 id="partner-header">Partners</h1>
       <div className="partner-row">
+        <div className="partner-row">
+          <a
+            href="http://www.gconstruct.se/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="/images/g_logga.png"
+              alt="G Construct"
+              id="first-partner"
+            />
+          </a>
+          <a href="http://ttms.se/" target="_blank" rel="noopener noreferrer">
+            <img
+              src="/images/ttms.png"
+              alt="Trädgårdsteknik"
+              id="second-partner"
+            />
+          </a>
+        </div>
+
         <a
           href="https://www.facebook.com/pages/category/Company/Smeder%C3%B6ds-Hovslageri-AB-1506112216341560/"
           target="_blank"
@@ -13,24 +34,8 @@ const Partners = () => {
           <img
             src="/images/smederods.png"
             alt="Smederöds Hovslageri"
-            id="first-partner"
+            id="third-partner"
           />
-        </a>
-        <a href="http://ttms.se/" target="_blank" rel="noopener noreferrer">
-          <img
-            src="/images/ttms.png"
-            alt="Trädgårdsteknik"
-            id="second-partner"
-          />
-        </a>
-      </div>
-      <div className="partner-row">
-        <a
-          href="http://www.gconstruct.se/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="/images/g_logga.png" alt="G Construct" id="third-partner" />
         </a>
         <a
           href="https://www.stromsholmssadelmakeri.se/"

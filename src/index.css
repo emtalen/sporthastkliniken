@@ -91,21 +91,16 @@ p {
   transition: ease-in 0.5s;
 }
 
-#footer h1 {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  text-transform: uppercase;
-  font-weight: 100;
-  padding-top: 2%;
-  font-size: 1.5rem;
-}
-
 .footer-info {
-  display: inline-table; 
-  padding-right: 3%;
-  padding-left: 3%;
+  display: inline-table;
+  padding-right: 2.5%;
+  padding-left: 2.5%;
+  padding-top: 2%;
   margin-bottom: 3%;
   margin-top: 1%;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 100;
 }
 #hack {
   color: #290202;
@@ -184,7 +179,7 @@ p {
   text-align: center;
   background-color: lightgray;
   color: black;
-  padding: 2rem;
+  padding: 4%;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -194,51 +189,41 @@ p {
   font-weight: 100;
   text-transform: uppercase;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  padding-top: 1.7%;
+  /* padding-top: 1%; */
+  text-align: center;
 }
 
 #service {
-  margin: 1%;
-  border: outset black 1px;
-  padding: 1%;
-  /* width: fit-content; */
   display: inline-block;
-}
-
-#service p {
-  font-size: 2rem;
-  font-weight: 100;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
 }
 
 #listcontainer {
   display: inline-flex;
   text-align: center;
+  padding-top: 4%;
 }
 
 .list-items {
+  list-style: none;
   display: inline-table;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 1.2rem;
-  font-weight: 100;
-  text-align: center;
-  padding: 0.5%;
-  padding-right: 2%;
+  font-size: 1.4rem;
+  font-weight: 100; 
+  min-width: max-content;
+  padding-right: 3%; 
+  padding-left: 3%;
+  width: 30%;
 }
 
 ul {
   list-style: none;
-  text-align: center;
-}
-
-#last-list{
-  padding-right: 4%;
 }
 
 #image-goes-here {
   height: 75vh;
   border-bottom: 2px solid black;
-  background-image: url("/images/49-bw.jpg");
+  background-image: url("/images/51-bw3_kompressed.jpg");
   background-size: cover;
 }
 
@@ -275,7 +260,6 @@ ul {
   text-align: center;
   width: 100%;
   padding-bottom: 10%;
-   
 }
 
 #service-header {
@@ -291,7 +275,6 @@ ul {
 #row-container {
   margin-top: 2%;
   width: 100%;
-  
 }
 
 .service-row {
@@ -321,23 +304,23 @@ ul {
 
 .service:hover {
   opacity: 0.3;
-} 
+}
 
 @keyframes sinkDown {
   0% {
-   margin-bottom: 0;
+    margin-bottom: 0;
   }
   25% {
-   margin-bottom: 0.2%;
+    margin-bottom: 0.2%;
   }
   50% {
-   margin-bottom: 0.5%;
+    margin-bottom: 0.5%;
   }
   75% {
-   margin-bottom: 0.7%;
+    margin-bottom: 0.7%;
   }
   100% {
-   margin-bottom: 1%;
+    margin-bottom: 1%;
   }
 }
 
@@ -566,7 +549,7 @@ ul {
 }
 
 #gallery h1 {
-   color: black;
+  color: black;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 100;
   text-transform: uppercase;
@@ -590,7 +573,7 @@ ul {
 
 .instagram-photo img:hover {
   opacity: 0.4;
-} 
+}
 #magnus-image {
   width: 35%;
   height: auto;
@@ -611,6 +594,7 @@ ul {
   color: black;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: -8%;
 }
 
 .partner-row {
@@ -623,6 +607,7 @@ ul {
   padding-right: 5%;
   height: auto;
   width: 20%;
+  padding-bottom: 3%;
 }
 
 #second-partner {

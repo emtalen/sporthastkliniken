@@ -7,7 +7,7 @@ const StartPageEnglish = () => {
       <h1>WELCOME TO SPORTHÄSTKLINIKEN</h1>
       <div className="english-container" id="text-container">
         <h3>
-          We are a horse clinic with long experience with emergency medical
+          We are an equine clinic with long experience with emergency medical
           care, orthopaedics and surgery, focusing on the sport horse.
           <br />
           To find the complete solution for you and your horse we work with
