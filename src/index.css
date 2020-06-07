@@ -106,7 +106,7 @@ p {
   color: #290202;
 }
 #start-page {
-  background-image: url("/images/IMG_7926_bw_2_kompressed.jpg");
+  background-image: url("/images/IMG_7926_bw_kompressed_1-min.jpg");
   background-size: cover;
   height: 100vh;
   z-index: 0;
@@ -229,7 +229,7 @@ ul {
 #image-goes-here {
   height: 75vh;
   border-bottom: 2px solid black;
-  background-image: url("/images/51-bw3_kompressed.jpg");
+  background-image: url("/images/51-bw3_kompressed-min.jpg");
   background-size: cover;
 }
 

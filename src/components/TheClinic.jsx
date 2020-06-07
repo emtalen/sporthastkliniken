@@ -31,37 +31,37 @@ const TheClinic = () => {
         undersökning av våra patienter.
       </p>
       <img
-        src="/images/IMG_7962_kompressed.jpg"
+        src="/images/IMG_7962_kompressed-min.jpg"
         alt="Kliniken"
         id="big-image"
       />
       <img
-        src="/images/IMG_7970_kompressed.jpg"
+        src="/images/IMG_7970_kompressed-min.jpg"
         alt="Kliniken"
         id="big-image"
       />
       <div id="image-container">
         <div className="row-image">
           <img
-            src="/images/Screen Shot 2020-05-18 at 20.58.32.png"
+            src="/images/Screen Shot 2020-05-18 at 20.58.32-min.png"
             alt="Kliniken"
           />
         </div>
         <div className="row-image">
           <img
-            src="/images/Screen Shot 2020-05-18 at 20.59.01.png"
+            src="/images/Screen Shot 2020-05-18 at 20.59.01-min.png"
             alt="Kliniken"
           />
         </div>
         <div className="row-image">
           <img
-            src="/images/Screen Shot 2020-05-18 at 20.59.37.png"
+            src="/images/Screen Shot 2020-05-18 at 20.59.37-min.png"
             alt="Kliniken"
           />
         </div>
         <div className="row-image">
           <img
-            src="/images/Screen Shot 2020-05-18 at 20.59.21.png"
+            src="/images/Screen Shot 2020-05-18 at 20.59.21-min.png"
             alt="kliniken"
           />
         </div>

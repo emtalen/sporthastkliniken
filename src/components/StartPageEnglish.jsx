@@ -3,7 +3,6 @@ import React from "react";
 const StartPageEnglish = () => {
   return (
     <div id="start-page-english">
-      {/* <div className="english-container"></div> */}
       <h1>WELCOME TO SPORTHÄSTKLINIKEN</h1>
       <div className="english-container" id="text-container">
         <h3>
@@ -20,7 +19,11 @@ const StartPageEnglish = () => {
           ACVS, American Specialist in Equine Surgery.
         </h3>
       </div>
-      <img src="/images/61-bw.jpg" alt="Front" id="english-image" />
+      <img
+        src="/images/61-bw_kompressed-min.jpg"
+        alt="Front"
+        id="english-image"
+      />
     </div>
   );
 };

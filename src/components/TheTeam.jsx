@@ -6,7 +6,7 @@ const TheTeam = () => {
       <div id="team-container">
         <h1>Team</h1>
         <div className="team-member">
-          <img src="/images/44.jpg" alt="Laura" />
+          <img src="/images/44_kompressed-min.jpg" alt="Laura" />
           <div className="team-member-container">
             <h2>Laura Hirvinen</h2>
             <p>
@@ -46,7 +46,7 @@ const TheTeam = () => {
           </div>
         </div>
         <div className="team-member">
-          <img src="/images/43.jpg" alt="Mika" />
+          <img src="/images/43_kompressed-min.jpg" alt="Mika" />
           <div className="team-member-container">
             <h2>Mika Thalén</h2>
             <p>
@@ -60,7 +60,7 @@ const TheTeam = () => {
           </div>
         </div>
         <div className="team-member">
-          <img src="/images/45.jpg" alt="Emelie" />
+          <img src="/images/45_kompressed-min.jpg" alt="Emelie" />
           <div className="team-member-container">
             <h2>Emelie Fröjd Andersson</h2>
             <p>
