@@ -43,7 +43,7 @@ const Partners = () => {
           rel="noopener noreferrer"
         >
           <img
-            src="/images/strömsholmlogga.png"
+            src="images/strömsholmlogga.png"
             alt="Strömsholms Sadelmakeri"
             id="forth-partner"
           />
