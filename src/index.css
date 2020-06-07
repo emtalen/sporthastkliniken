@@ -106,7 +106,7 @@ p {
   color: #290202;
 }
 #start-page {
-  background-image: url("/images/0-bw.jpg");
+  background-image: url("/images/IMG_7926_bw_2_kompressed.jpg");
   background-size: cover;
   height: 100vh;
   z-index: 0;
@@ -127,14 +127,15 @@ p {
 #short-info {
   text-align: center;
   height: auto;
-  width: 35%;
-  float: right;
-  margin: 5%;
-  margin-top: 11%;
+  width: 25%;
+  float: left;
+  margin: 7%;
+  margin-top: 16%;
   position: relative;
-  color: black;
+  color: lightgray;
   padding: 3%;
-  background: rgba(255, 255, 255, 0.5);
+  background-color: #290202;
+  background: rgba(41, 2, 2, 0.75);
 }
 
 #start-page-english {
@@ -189,31 +190,36 @@ p {
   font-weight: 100;
   text-transform: uppercase;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  /* padding-top: 1%; */
   text-align: center;
 }
 
 #service {
-  display: inline-block;
   text-align: center;
+  margin: auto;
+  width: 100%;
 }
 
 #listcontainer {
-  display: inline-flex;
+  display: inline-table;
   text-align: center;
-  padding-top: 4%;
+  margin: auto;
+    width: 100%;
 }
 
 .list-items {
-  list-style: none;
+  min-width: 30%;
+  text-transform: uppercase;
   display: inline-table;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1.4rem;
   font-weight: 100; 
-  min-width: max-content;
-  padding-right: 3%; 
-  padding-left: 3%;
-  width: 30%;
+  padding: 2%;
+}
+
+.list-items p {
+  background-color: #290202;
+  color: lightgray;
+  padding: 3%;
 }
 
 ul {
