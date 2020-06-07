@@ -8,13 +8,11 @@ const StartPage = () => {
           Välkommen till Sporthästkliniken! <br />
         </h1>
         <h3>
-          Vi är en hästklinik med lång erfarenhet av akutsjukvård, ortopedi och
-          kirurgi med fokus på sporthästen.
-          <br />För att hitta en helheltslösning för dig och din häst 
-          samarbetar vi med duktiga hovslagare, fysioterapeuter och
-          rehabiliteringsanläggningar.
-          <br /> Vi håller oss i framkant när det gäller diagnostiska tekniker
-          och behandling av olika skador.<br/> Tveka inte att höra av dig om du har några frågor.
+          Sporthästkliniken Häljeby AB där anatomisk kunskap, förståelse för
+          ridningens biomekanik och veterinärmedicinsk expertis knyts ihop.{" "}
+          <br />
+          Vi har specialiserad oss på sporthästens ortopediska besvär,
+          ridbarhetsproblematik och kirurgi.
         </h3>
       </div>
     </div>

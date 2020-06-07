@@ -11,24 +11,24 @@ const HomePageServices = () => {
 
             <div id="listcontainer">
               <div className="list-items">
-                <p>Sårskador</p>
                 <p>Hältutredningar</p>
-                <p>Medicinska Undersökningar</p>
+                <p>Besiktningar</p>
                 <p>Ryggutredningar</p>
-                <p>Rehab</p>
-              </div>
-              <div className="list-items">
-                <p>Röntgen</p>
                 <p>Kirurgi</p>
-                <p>Shockwave</p>
-                <p>Regenerativ Terapi</p>
-                <p>Ultraljud</p>
+                <p>Sårskador</p>
               </div>
               <div className="list-items">
+                <p>Regenerativ Terapi</p>
+                <p>Röntgen</p>
+                <p>Ultraljud</p>
+                <p>Shockwave</p>
                 <p>Endoskopi</p>
+              </div>
+              <div className="list-items">
+                <p>Medicinska Undersökningar</p>
                 <p>Tandvård</p>
                 <p>Hovslageri & Sjukbeslag</p>
-                <p>Besiktningar</p>
+                <p>Rehab</p>
                 <p>Föreläsningar</p>
               </div>
             </div>

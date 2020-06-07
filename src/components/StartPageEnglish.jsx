@@ -7,19 +7,20 @@ const StartPageEnglish = () => {
       <h1>WELCOME TO SPORTHÄSTKLINIKEN</h1>
       <div className="english-container" id="text-container">
         <h3>
-          We are an equine clinic with long experience with emergency medical
-          care, orthopaedics and surgery, focusing on the sport horse.
+          Sporthästkliniken Häljeby is an equine clinic with unique
+          understanding of the biomechanics of riding combined with veterinary
+          medical expertise.
           <br />
-          To find the complete solution for you and your horse we work with
-          talented farriers, physiotherapists and rehabilitation facilities.{" "}
+          We have specialized in surgery, orthopedic problems and riding related
+          issues in the sport horse.
           <br />
-          We stay at the forefront when it comes to diagnostic techniques and
-          treatment of various injuries.
-          <br /> Please do not hesitate to get in touch if you have any
-          questions. We look forward hearing from you.
+          The clinic is situated i Västmanland, 15minutes drive from the Equine
+          Center of Strömholm, 1.5h drive from Stockholm, just beside the
+          highway E18. The clinic is owned by Dr Laura Hirvinen DVM, MS, Dipl
+          ACVS, American Specialist in Equine Surgery.
         </h3>
       </div>
-        <img src="/images/61-bw.jpg" alt="Front" id="english-image" />
+      <img src="/images/61-bw.jpg" alt="Front" id="english-image" />
     </div>
   );
 };

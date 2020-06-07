@@ -24,7 +24,7 @@ const ServForthRow = () => {
           onMouseLeave={() => setServiceEleven(false)}
         >
           <div className="service-name" id="one-line">
-            <h1>Tandvård</h1>
+            <h1>Medicinska Undersökningar</h1>
           </div>
         </div>
         <div
@@ -34,10 +34,7 @@ const ServForthRow = () => {
           onMouseLeave={() => setServiceTwelve(false)}
         >
           <div className="service-name" id="twolines">
-            <h1>
-              Hovslageri
-              <br /> & Sjukbeslag
-            </h1>
+            <h1>Tandvård</h1>
           </div>
         </div>
         {serviceTen && (
@@ -51,27 +48,29 @@ const ServForthRow = () => {
         )}
         {serviceEleven && (
           <div className="service-info">
-            <h3>Tandvård</h3>
+            <h3>Medicinska Undersökningar</h3>
             <p>
-              Vi utför det grundliga inom tandvård; kontroller, raspning av
-              tänder och borttagning av vargtänder . Laura gör även kirurgiska
-              ingrepp för borttagning av tänder på Husaby Hästklinik i Skara.
-              Bokning för tandborttagning sker direkt till Husaby Hästklink
-              0511-275 50 eller skara@husabyhastkliniken.se
+              Undersökning av medicinska problem så som hosta, nedsatt
+              prestation, hudproblem, avmagring, diarre eller återkommande fång.
+              Kliniken är utrustad med båda en 1m och 3m lång gastroskop som
+              möjliggör undersökning av magsäcken, urinvägar, luftvägar etc. på
+              häst. Biopsier (vävnadsprov) för vissa muskelsjukdomar,
+              hudförändringar, återkommande kolik görs under sedering och lokal
+              bedövning.
             </p>
           </div>
         )}
         {serviceTwelve && (
           <div className="service-info">
-            <h3>Hovslageri & Sjukbeslag</h3>
+            <h3>Tandvård</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum..
+              Vi utför det grundliga samt kirurgi inom tandvård; kontroller,
+              raspning av tänder samt borttagning av vargtänder och kindtänder
+              som går att operera utan narkos. Hästar men kroniska sinuit
+              (bihåleinflammation) eller komplicerade tandfrakturer hänvisas
+              till Husaby Hästakut i Skara där Laura kan operera dessa under
+              narkos. Bokning för tandborttagning sker direkt till Husaby
+              Hästklink, 0511-275 50 eller skara@husabyhastklinik.se
             </p>
           </div>
         )}

@@ -44,7 +44,7 @@ const ServThirdRow = () => {
           <h3>Röntgen</h3>
           <p>
             Röntgen används oftast för att utesluta skelettskador efter ett
-            trauma, vid hältundersökningar eller besiktning. Med vårt
+            trauma, vid hältundersökningar eller besiktning. Med vårt digital
             röntgensystem går det även att ta bilder från halsen och
             tornutskotten på ryggen.
           </p>
@@ -54,22 +54,25 @@ const ServThirdRow = () => {
         <div className="service-info">
           <h3>Ultraljud</h3>
           <p>
-            Ultraljud används främst vid undersökning av skador i mjukdelarna,
-            senor, leder, rygg, buk, ögon mm. Det går även att undersöka
-            sakroiliakled och att göra gynekologiska undersökningar.
+            På Sporthästkliniken använder vi ultraljudsmaskin flitigt för
+            undersökning av ligament-, muskel-och senskador. Ultraljud används
+            även för inspektion av leder, broskytor, undersökning av bukhåla,
+            ögon eller för gynekologiska undersökningar. Undersökning av
+            sacroiliacled sker via ändtarmen efter att hästen fått lugnande
+            medicin.
           </p>
         </div>
       )}
       {serviceNine && (
         <div className="service-info">
-          <h3>Shockwave Stötvågsbehandling</h3>
+          <h3>Shockwave - Stötvågsbehandling</h3>
           <p>
-            Används för behandling av muskelömhet i ryggar och skador på senor,
-            senskidor, gaffelband med mera. Vi har en helt ny PiezoWave
+            Shockwave används för behandling av muskelömhet i ryggar och skador
+            på ligament, senor, gaffelband med mera. Vi har en helt ny PiezoWave
             stötvågsmaskin som möjliggör en fokuserad djupgående behandling på
             det aktuella stället. Stötvåg har direkt smärtlindrande och
-            anti-inflammatorisk effekt vilket ger fantastiskt resultat på
-            muskelömhet.
+            anti-inflammatorisk effekt vilket ger fantastiskt resultat bland
+            annat på muskelömhet.
           </p>
         </div>
       )}
