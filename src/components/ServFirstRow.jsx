@@ -9,7 +9,7 @@ const ServFirstRow = () => {
       <div className="service-row">
         <div
           className="service"
-          style={{ backgroundImage: 'url("/images/1_Sårskador.jpg")' }}
+          style={{ backgroundImage: 'url("/images/2_hält.jpg")' }}
           onMouseEnter={() => setServiceOne(true)}
           onMouseLeave={() => setServiceOne(false)}
         >
@@ -19,7 +19,7 @@ const ServFirstRow = () => {
         </div>
         <div
           className="service"
-          style={{ backgroundImage: 'url("/images/2_hält.jpg")' }}
+          style={{ backgroundImage: 'url("/images/6_besiktningar.jpg")' }}
           onMouseEnter={() => setServiceTwo(true)}
           onMouseLeave={() => setServiceTwo(false)}
         >

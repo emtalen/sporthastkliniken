@@ -665,7 +665,7 @@ ul {
   font-size: 3rem;
   color: black;
   text-transform: uppercase;
-  padding-bottom: 3%;
+  padding-bottom: 2%;
 }
 
 #construction-container p {
@@ -684,8 +684,14 @@ ul {
   max-width: 95%;
 }
 
+#big-image {
+  height: auto;
+  width: 80%;
+}
+
 #image-container {
   display: inline-block;
+  padding-top: 3%;
 }
 
 .row-image {
