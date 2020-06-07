@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from "react";
 
 const ServFifthRow = () => {
   const [serviceThirteen, setServiceThirteen] = useState(false);
@@ -9,7 +9,7 @@ const ServFifthRow = () => {
       <div className="service-row">
         <div
           className="service"
-          style={{ backgroundImage: 'url("/images/IMG_1471s.jpg")' }}
+          style={{ backgroundImage: 'url("/images/12_hov.jpg")' }}
           onMouseEnter={() => setServiceThirteen(true)}
           onMouseLeave={() => setServiceThirteen(false)}
         >
@@ -29,7 +29,7 @@ const ServFifthRow = () => {
         </div>
         <div
           className="service"
-          style={{ backgroundImage: 'url("/images/14_förel.jpg")' }}
+          style={{ backgroundImage: 'url("/images/15_forelasning.jpg")' }}
           onMouseEnter={() => setServiceFifthteen(true)}
           onMouseLeave={() => setServiceFifthteen(false)}
         >
@@ -80,6 +80,6 @@ const ServFifthRow = () => {
       )}
     </div>
   );
-}
+};
 
-export default ServFifthRow
+export default ServFifthRow;

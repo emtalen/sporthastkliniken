@@ -19,7 +19,7 @@ const ServForthRow = () => {
         </div>
         <div
           className="service"
-          style={{ backgroundImage: 'url("/images/5_med_under.jpg")' }}
+          style={{ backgroundImage: 'url("/images/5_med under.jpg")' }}
           onMouseEnter={() => setServiceEleven(true)}
           onMouseLeave={() => setServiceEleven(false)}
         >

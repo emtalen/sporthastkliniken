@@ -10,7 +10,7 @@ const ServThirdRow = () => {
       <div className="service-row">
         <div
           className="service"
-          style={{ backgroundImage: 'url("/images/7_Röntgen1.jpg")' }}
+          style={{ backgroundImage: 'url("/images/7_Ront.jpg")' }}
           onMouseEnter={() => setServiceSeven(true)}
           onMouseLeave={() => setServiceSeven(false)}
         >
