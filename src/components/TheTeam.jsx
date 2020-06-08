@@ -6,7 +6,10 @@ const TheTeam = () => {
       <div id="team-container">
         <h1>Team</h1>
         <div className="team-member">
-          <img src="/images/44_kompressed-min.jpg" alt="Laura" />
+          <img
+            src="/images/Screenshot 2020-06-08 at 22.19.46.png"
+            alt="Laura"
+          />
           <div className="team-member-container">
             <h2>Laura Hirvinen</h2>
             <p>
@@ -60,7 +63,10 @@ const TheTeam = () => {
           </div>
         </div>
         <div className="team-member">
-          <img src="/images/45_kompressed-min.jpg" alt="Emelie" />
+          <img
+            src="/images/Screenshot 2020-06-08 at 22.20.09.png"
+            alt="Emelie"
+          />
           <div className="team-member-container">
             <h2>Emelie Fröjd Andersson</h2>
             <p>
