@@ -52,9 +52,9 @@ const Header = () => {
         style={{ color: "white" }}
         className="header-tab"
       >
-        <NavLink to="/kliniken" className="header-tab">
+        {/* <NavLink to="/kliniken" className="header-tab"> */}
           Kliniken
-        </NavLink>
+        {/* </NavLink> */}
         {kliniken && (
           <>
             <div className="dropdown-tab" id="dropdown-tjänster">
@@ -72,11 +72,6 @@ const Header = () => {
                 <p>Galleri</p>
               </NavLink>
             </div>
-            {/* <div className="dropdown-tab">
-              <NavLink to="/nyheter" className="tab">
-                <p>Nyheter</p>
-              </NavLink>
-            </div> */}
           </>
         )}
       </div>
