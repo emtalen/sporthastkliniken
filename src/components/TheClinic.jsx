@@ -10,6 +10,11 @@ const TheClinic = () => {
         mottagande där vi ser helheten hos häst och ryttare. <br /> Uppbyggnaden
         har kunnat förverkligas med hjälp av EU: stöd för landsbygdsutveckling.
       </p>
+      {/* <img
+        src="/images/838a8ca82d04ac12ca01e1ceea518a73_370x500.jpg"
+        alt="EU Loggan"
+        id="EU"
+      /> */}
       <p>
         Vi erbjuder tjänster såsom hältutredningar, besiktningar, sjukbeslag,
         kirurgi samt lektioner inom rehabilitering av din häst (tömkörning /
@@ -40,6 +45,7 @@ const TheClinic = () => {
         alt="Kliniken"
         id="big-image"
       />
+
       <div id="image-container">
         <div className="row-image">
           <img
@@ -66,6 +72,7 @@ const TheClinic = () => {
           />
         </div>
       </div>
+
       <div id="logo-container">
         <img src="/images/ttms.png" alt="Trädgårdsteknik" id="logo-image-1" />
 
@@ -77,6 +84,11 @@ const TheClinic = () => {
           id="logo-image-3"
         />
       </div>
+      <img
+        src="/images/EU-logo-jordbruksfonden-farg.jpg"
+        alt="EU Loggan"
+        id="EU"
+      />
     </div>
   );
 };

@@ -684,6 +684,10 @@ ul {
   max-width: 95%;
 }
 
+#EU {
+  margin-top: -3%;
+}
+
 #big-image {
   height: auto;
   width: 80%;
