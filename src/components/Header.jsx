@@ -52,9 +52,9 @@ const Header = () => {
         style={{ color: "white" }}
         className="header-tab"
       >
-        {/* <NavLink to="/kliniken" className="header-tab"> */}
+        <NavLink to="/kliniken" className="header-tab">
           Kliniken
-        {/* </NavLink> */}
+        </NavLink>
         {kliniken && (
           <>
             <div className="dropdown-tab" id="dropdown-tjänster">
