@@ -2,7 +2,7 @@
 [Emma-Maria Thalen](https://github.com/emtalen)   
 
 ## Built with
-React v. 16.13.1
+React v. 16.13.1  
 **Deployed at:** [Netlify](https://sporthaskliniken.se).
 
 ## The code   
