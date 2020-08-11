@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const ContactEnglish = () => {
   return (
@@ -76,6 +76,6 @@ const ContactEnglish = () => {
       ></iframe>
     </div>
   );
-}
+};
 
-export default ContactEnglish
+export default ContactEnglish;

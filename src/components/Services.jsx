@@ -8,11 +8,11 @@ import ServFifthRow from "./ServFifthRow";
 const Services = () => {
   return (
     <div id="services-container">
-      <h1 id='service-header'>Tjänster</h1>
+      <h1 id="service-header">Tjänster</h1>
       <ServFirstRow />
       <ServSecondRow />
       <ServThirdRow />
-      <ServForthRow/>
+      <ServForthRow />
       <ServFifthRow />
     </div>
   );

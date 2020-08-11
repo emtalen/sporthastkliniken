@@ -5,16 +5,14 @@ import Home from "./components/Home";
 import { Route, Switch } from "react-router-dom";
 import TheTeam from "./components/TheTeam";
 import Services from "./components/Services";
-import Contact from './components/Contact'
-import TheClinic from './components/TheClinic'
-import Gallery from './components/Gallery'
+import Contact from "./components/Contact";
+import TheClinic from "./components/TheClinic";
+import Gallery from "./components/Gallery";
 import Partners from "./components/Partners";
 import English from "./components/English";
 import News from "./components/News";
 
 const App = () => {
-    
-
   return (
     <>
       <Header />
@@ -24,12 +22,12 @@ const App = () => {
         <Route exact path="/tjänster" component={Services}></Route>
         <Route exact path="/kontakt" component={Contact}></Route>
         <Route exact path="/kliniken" component={TheClinic}></Route>
-        <Route exact path='/galleri' component={Gallery}></Route>
-        <Route exact path='/partners' component={Partners}></Route>
-        <Route exact path='/english' component={English}></Route>
-        <Route exact path='/nyheter' component={News}></Route>
+        <Route exact path="/galleri" component={Gallery}></Route>
+        <Route exact path="/partners" component={Partners}></Route>
+        <Route exact path="/english" component={English}></Route>
+        <Route exact path="/nyheter" component={News}></Route>
       </Switch>
-     <Footer />
+      <Footer />
     </>
   );
 };

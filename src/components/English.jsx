@@ -5,8 +5,8 @@ import StartPageEnglish from "./StartPageEnglish";
 const English = () => {
   return (
     <>
-    <StartPageEnglish/>
-    <ContactEnglish/>
+      <StartPageEnglish />
+      <ContactEnglish />
     </>
   );
 };
