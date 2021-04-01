@@ -11,12 +11,15 @@ const Gallery = () => {
   const fetchPhotos = async () => {
     await axios
       .get(
-        'https://www.instagram.com/graphql/query?query_id=17888483320059182&variables={"id":"33288525717","first":60,"after":null}'
+        'https://blueberry-cake-98586.herokuapp.com/https://www.instagram.com/graphql/query?query_id=17888483320059182&variables={"id":"33288525717","first":60,"after":null}'
       )
       .then((response) => {
         setInstagramFeed(
           response.data.data.user.edge_owner_to_timeline_media.edges
         );
+      })
+      .catch((error) => {
+        console.log(error);
       });
   };
   useEffect(() => {
