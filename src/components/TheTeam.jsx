@@ -2,15 +2,15 @@ import React from "react";
 
 const TheTeam = () => {
   return (
-    <div id="team">
-      <div id="team-container">
+    <div id='team'>
+      <div id='team-container'>
         <h1>Team</h1>
-        <div className="team-member">
+        <div className='team-member'>
           <img
-            src="/images/Screenshot 2020-06-08 at 22.19.46.png"
-            alt="Laura"
+            src='/images/Screenshot 2020-06-08 at 22.19.46.png'
+            alt='Laura'
           />
-          <div className="team-member-container">
+          <div className='team-member-container'>
             <h2>Laura Hirvinen</h2>
             <p>
               “If you can dream it, you can do it”. Laura var 8 år gammal när
@@ -48,38 +48,39 @@ const TheTeam = () => {
             </p>
           </div>
         </div>
-        <div className="team-member">
-          <img src="/images/43_kompressed-min.jpg" alt="Mika" />
-          <div className="team-member-container">
+        <div className='team-member'>
+          <img src='/images/mikakliniken.jpeg' alt='Mika' />
+          <div className='team-member-container'>
             <h2>Mika Thalén</h2>
             <p>
-              Företagets spindel i nätet. Mika började jobba på
-              Sporthästkliniken 2018. Hon driver en hästgård med sin man utanför
+              Mika började jobba på
+              Sporthästkliniken 2018 och är spindeln i nätet på Sporthästkliniken. Hon driver en hästgård med sin man utanför
               Strömsholm där hon har sin häst Aida som hon tävlar hoppning med.
               Mika sköter alla bokningar och all kundkontakt som sker via sms,
               telefon och mejl och finns ofta på plats på Sporthästkliniken
-              tillsammans med Laura.
+              tillsammans med Laura och Emma.
             </p>
           </div>
         </div>
-        <div className="team-member">
-          <img
-            src="/images/Screenshot 2020-06-08 at 22.20.09.png"
-            alt="Emelie"
-          />
-          <div className="team-member-container">
-            <h2>Emelie Fröjd Andersson</h2>
+        <div className='team-member'>
+          <img src='/images/emmakliniken.jpeg' alt='Emma' />
+          <div className='team-member-container'>
+            <h2>Emma Lindström</h2>
             <p>
-              Emelie började jobba på Sporthästkliniken i December 2017. Hon har
-              en hästgård ca en timma från Strömsholm med lite hobbyhästar,
-              hundar, katter och älgar inpå knuten. Emelie är mammaledig men har
-              nu börjat mjukstarta med att jobba torsdagar varje vecka.
+              Emma började på Sporthästkliniken 2022 och är Lauras assistent vid all behandling av våra patienter.
+              Hon har sitt stall i Köping i Macksta där hon har sin egna
+              uppfödning född 2018 e Crusader Ice som matchas mot hoppbanorna
+              samt ett litet gotlandsruss och två inackorderingar. Bor gör hon
+              däremot bara ett stenkast från Sporthästkliniken med sin sambo och
+              hans två barn. Emma är utbildad hipplog och har tidigare arbetat
+              inom ridskolevärlden, senast som ridskolechef på Köpings ridklubb
+              innan hon blev en i teamet på Sporthästkliniken.
             </p>
           </div>
         </div>
-        <div className="team-member">
-          <img src="/images/IMG_4576.PNG" alt="Magnus" id="magnus-image" />
-          <div className="team-member-container">
+        <div className='team-member'>
+          <img src='/images/IMG_4576.PNG' alt='Magnus' id='magnus-image' />
+          <div className='team-member-container'>
             <h2>Magnus Smederöd </h2>
             <p>
               Hovslagare sedan 1993. Magnus är godkänd av Jordbruksverket och
