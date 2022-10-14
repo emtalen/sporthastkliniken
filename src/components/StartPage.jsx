@@ -3,6 +3,7 @@ import React from "react";
 const StartPage = () => {
   return (
     <div id="start-page">
+      <video src=""></video>
       <div id="short-info">
         <h1>
           Välkommen till Sporthästkliniken! <br />

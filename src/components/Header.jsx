@@ -32,6 +32,11 @@ const Header = () => {
         <img src="/images/Sporthastkliniken_liggande_vit_RGB.png" alt="logo" />
       </NavLink>
       <div>
+        <NavLink to="/lediga-tjanster" className="header-tab">
+          Lediga tjänster
+        </NavLink>
+      </div>
+      <div>
         <NavLink to="/english" className="header-tab">
           English
         </NavLink>

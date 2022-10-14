@@ -11,6 +11,7 @@ import Gallery from "./components/Gallery";
 import Partners from "./components/Partners";
 import English from "./components/English";
 import News from "./components/News";
+import Work from "./components/Work";
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
         <Route exact path="/partners" component={Partners}></Route>
         <Route exact path="/english" component={English}></Route>
         <Route exact path="/nyheter" component={News}></Route>
+        <Route exact path="/lediga-tjanster" component={Work}></Route>
       </Switch>
       <Footer />
     </>
