@@ -49,20 +49,6 @@ const TheTeam = () => {
           </div>
         </div>
         <div className='team-member'>
-          <img src='/images/mikakliniken.jpeg' alt='Mika' />
-          <div className='team-member-container'>
-            <h2>Mika Thalén</h2>
-            <p>
-              Mika började jobba på
-              Sporthästkliniken 2018 och är spindeln i nätet på Sporthästkliniken. Hon driver en hästgård med sin man utanför
-              Strömsholm där hon har sin häst Aida som hon tävlar hoppning med.
-              Mika sköter alla bokningar och all kundkontakt som sker via sms,
-              telefon och mejl och finns ofta på plats på Sporthästkliniken
-              tillsammans med Laura och Emma.
-            </p>
-          </div>
-        </div>
-        <div className='team-member'>
           <img src='/images/emmakliniken.jpeg' alt='Emma' />
           <div className='team-member-container'>
             <h2>Emma Lindström</h2>
